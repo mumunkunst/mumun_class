@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUMUN CLASS — 미술 수업자료</title>
+<meta name="description" content="한광여자고등학교 미술 수업자료. 주제별로 하나씩 쌓아 가는 미술사·미술이론 읽기 자료.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ground:#17110d;--clay:#c9673b;--bone:#efe3cf;--bone-dim:#b8a58b;--line:rgba(239,227,207,.18);--pad-x:clamp(28px,6vw,88px)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ground);color:var(--bone);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.7;min-height:100svh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+  nav{display:flex;justify-content:space-between;padding:18px var(--pad-x);font-size:13px;color:var(--bone-dim);letter-spacing:.06em}
+  nav a:hover{color:var(--clay)}
+  header{padding:clamp(40px,8vw,120px) var(--pad-x) clamp(32px,5vw,64px)}
+  h1{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(36px,5.5vw,78px);line-height:1.1;letter-spacing:-.01em}
+  h1 span{display:block;font-size:.34em;font-weight:400;color:var(--clay);letter-spacing:.12em;margin-bottom:.6em}
+  header p{margin-top:1.2em;max-width:44ch;font-size:clamp(15px,1.4vw,19px);color:var(--bone-dim)}
+  main{flex:1;padding:0 var(--pad-x) clamp(48px,8vw,120px)}
+  ol{list-style:none;border-top:1px solid var(--line)}
+  li a{display:grid;grid-template-columns:8ch minmax(0,1fr) auto;gap:clamp(16px,3vw,40px);align-items:baseline;padding:clamp(20px,2.6vw,34px) 0;border-bottom:1px solid var(--line);transition:padding-left .2s}
+  li a:hover{padding-left:12px}
+  li a:hover .t{color:var(--clay)}
+  .n{font-family:"Noto Serif KR",serif;color:var(--clay);font-size:clamp(14px,1.2vw,16px);letter-spacing:.06em}
+  .t{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,2.2vw,32px);line-height:1.25;transition:color .2s}
+  .t small{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.5em;color:var(--bone-dim);margin-top:6px}
+  .d{font-size:13px;color:var(--bone-dim);white-space:nowrap}
+  footer{padding:24px var(--pad-x) 40px;font-size:12px;color:var(--bone-dim);border-top:1px solid var(--line)}
+  @media (max-width:640px){li a{grid-template-columns:1fr}.d{display:none}}
+</style>
+</head>
+<body>
+<nav><a href="/">MUMUN CLASS</a><a href="https://mumun.xyz">mumun.xyz</a></nav>
+<header>
+  <h1><span>한광여자고등학교 · 미술</span>수업자료</h1>
+  <p>주제 하나에 페이지 하나. 교과서 밖에서 걸린 질문을 도판과 함께 짧게 읽는다.</p>
+</header>
+<main>
+  <ol>
+    <li><a href="/mimesis/">
+      <span class="n">01</span>
+      <span class="t">미메시스 — 예술은 모방인가?<small>2026년 9월 고1 전국연합학력평가 영어 33번에서 출발 · 콘트라포스토, 흑회식과 적회식, 제욱시스와 파라시오스, 트롱프뢰유, 잭슨 폴록</small></span>
+      <span class="d">2026.09</span>
+    </a></li>
+  </ol>
+</main>
+<footer>MUMUN CLASS · 이대행 · 도판 출처는 각 페이지 하단에 표기</footer>
+</body>
+</html>
