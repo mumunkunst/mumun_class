@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>빛 — 무엇을 보여주고, 무엇을 숨길 것인가 · MUMUN CLASS</title>
+<meta name="description" content="2027학년도 수능 9월 모의평가 영어 40번 '선택적 가시성' 지문에서 출발하는 빛의 미술사 — 알베르티와 조토, 카라바조, 라투르, 라이트 오브 더비, 렘브란트, 아피아의 무대 조명, 나다르의 사진, 필름 누아르.">
+<meta property="og:title" content="빛 — 무엇을 보여주고, 무엇을 숨길 것인가">
+<meta property="og:description" content="영어 지문 하나에서 출발하는 빛의 미술사 · 한광여고 미술">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://class.mumun.xyz/light/">
+<meta property="og:image" content="https://class.mumun.xyz/light/img/matthew.jpg">
+<meta property="og:image:alt" content="카라바조, 〈성 마태오의 소명〉">
+<meta property="og:site_name" content="MUMUN CLASS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#0e0d0c;
+    --clay:#d9a441;      /* 촛불빛 */
+    --clay-deep:#8a6222;
+    --bone:#ece4d6;
+    --bone-dim:#a89c8a;
+    --line:rgba(236,228,214,.16);
+    --pad-x:clamp(28px,6vw,88px);
+    --pad-y:clamp(44px,7vw,96px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--ground);color:var(--bone);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;position:relative;word-break:keep-all;overflow-wrap:break-word}
+  a{color:var(--clay)}
+  a:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+  img{display:block}
+  picture{display:block}
+  .cover-fig picture{width:100%;height:100%}
+
+  nav.top{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;padding:18px var(--pad-x);font-size:13px;color:var(--bone-dim)}
+  nav.top a{color:var(--bone-dim);text-decoration:none;letter-spacing:.06em}
+  nav.top a:hover{color:var(--clay)}
+
+  /* 표지 */
+  .cover{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);border-bottom:1px solid var(--line)}
+  .cover-text{padding:calc(var(--pad-x) + 24px) var(--pad-x) var(--pad-x);display:flex;flex-direction:column;justify-content:space-between}
+  .kicker{font-size:clamp(14px,1.3vw,17px);color:var(--bone-dim)}
+  .kicker b{color:var(--clay);font-weight:500}
+  h1{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(38px,5.6vw,84px);line-height:1.1;letter-spacing:-.01em;margin:.4em 0 .3em}
+  h1 .gr{display:block;font-size:max(16px,.4em);font-weight:400;color:var(--clay);letter-spacing:.08em;margin-bottom:.35em}
+  .lede{max-width:34ch;font-size:clamp(17px,1.6vw,22px);line-height:1.75}
+  .cover-fig{position:relative;overflow:hidden;min-height:60vh}
+  .cover-fig img{width:100%;height:100%;object-fit:cover;object-position:center}
+  .cover-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 22px;background:linear-gradient(transparent,rgba(14,13,12,.94));font-size:13px;color:var(--bone-dim)}
+  figcaption b{color:var(--bone);font-weight:500}
+
+  /* 문제 */
+  .problem{padding:var(--pad-y) var(--pad-x);border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,5vw,72px)}
+  .passage{font-family:"Noto Serif KR",serif;font-size:clamp(15px,1.35vw,19px);line-height:1.85;color:var(--bone-dim);max-width:70ch}
+  .passage .src{display:block;font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--clay);letter-spacing:.04em;margin-bottom:10px;line-height:1.6}
+  .passage .no{color:var(--clay);font-weight:600;margin-right:.4em}
+  .passage mark{background:none;color:var(--bone);border-bottom:1px solid var(--clay);padding-bottom:1px}
+  .passage .blank{display:inline-block;min-width:6ch;border-bottom:2px solid var(--clay)}
+  .passage .sum{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:.95em}
+  .passage .ko{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.92em;color:var(--bone-dim)}
+  .passage .ko b{color:var(--bone);font-weight:600}
+  .passage .ko .lbl{display:block;color:var(--bone);font-weight:600;margin-bottom:6px;font-family:"Noto Sans KR",sans-serif;font-size:.9em;letter-spacing:.04em}
+  .keys h2{margin-bottom:.4em}
+  .keys p{font-size:clamp(15px,1.3vw,18px);color:var(--bone-dim);max-width:34ch;margin-bottom:18px}
+  .keys ol{list-style:none}
+  .keys li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:clamp(15px,1.3vw,18px);align-items:baseline}
+  .keys li:last-child{border-bottom:1px solid var(--line)}
+  .keys li .n{font-family:"Noto Serif KR",serif;color:var(--clay)}
+  .keys li .k{color:var(--bone);font-weight:500}
+  .keys li .s{display:block;color:var(--bone-dim);font-size:max(13px,.85em)}
+
+  /* 밴드 */
+  section.band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,5vw,72px);padding:var(--pad-y) var(--pad-x);border-bottom:1px solid var(--line);align-items:start}
+  section.band.flip{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+  section.band.flip .txt{order:2}
+  section.band.flip .fig,section.band.flip .figs{order:1}
+  section.band.wide{grid-template-columns:1fr}
+  h2{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(28px,3.4vw,46px);line-height:1.22;margin-bottom:.55em}
+  h2 small{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:max(14px,.42em);color:var(--clay);margin-bottom:.5em;letter-spacing:.02em}
+  .txt{min-width:0}
+  .txt p{font-size:clamp(16px,1.35vw,19px);max-width:46ch}
+  section.band.wide .txt p{max-width:72ch}
+  .txt p+p{margin-top:.9em}
+  .txt em{font-style:normal;color:var(--clay)}
+  .txt h3.sub{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,2vw,28px);margin:1.6em 0 .5em}
+  .fig{margin:0;position:sticky;top:24px}
+  .fig img{width:100%}
+  .fig figcaption{font-size:13px;color:var(--bone-dim);margin-top:10px;line-height:1.55}
+  .figs{display:grid;gap:26px;min-width:0}
+  .figs>*{min-width:0}
+  .figs .fig{position:static}
+
+  /* 읽기 상자 — 이론가·비평가 */
+  .read{margin-top:1.6em;border:1px solid var(--line);padding:20px 22px;max-width:62ch}
+  .read .who{font-family:"Noto Serif KR",serif;font-weight:600;color:var(--bone);font-size:clamp(16px,1.4vw,19px)}
+  .read .who span{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:clamp(13px,.78em,15px);color:var(--clay);margin-top:2px;line-height:1.5}
+  .read p{font-size:clamp(14px,1.15vw,16px);color:var(--bone-dim);margin-top:10px;max-width:none}
+  .read p b{color:var(--bone);font-weight:500}
+  .read .attr{font-size:clamp(13px,1.05vw,14px);color:var(--bone-dim);margin-top:8px;padding-left:14px}
+  .read q{font-family:"Noto Serif KR",serif;display:block;color:var(--bone);margin-top:12px;padding-left:14px;border-left:2px solid var(--clay-deep);font-size:1.05em;line-height:1.6}
+  .note{margin-top:1.4em;padding:14px 16px;border-left:2px solid var(--clay);font-size:clamp(14px,1.15vw,16px);color:var(--bone-dim);max-width:62ch}
+  .note b{color:var(--bone);font-weight:500}
+
+  /* 비교 행 */
+  .row{display:grid;gap:16px;margin-top:26px}
+  .row.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .row.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cell img{width:100%;height:auto}
+  .cell h4{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(15px,1.3vw,18px);margin:12px 0 4px}
+  .cell h4 span{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:clamp(13px,.78em,15px);color:var(--clay)}
+  .cell p{font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.6}
+  .cell p+p{margin-top:.7em}
+  .row{align-items:start}
+  .cell p b{color:var(--bone);font-weight:500}
+
+  /* 계보 */
+  .line{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:26px;border-top:1px solid var(--line)}
+  .line div{padding:16px 16px 16px 0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .line div:nth-child(2n){border-right:0}
+  .line div:nth-last-child(-n+2){border-bottom:0}
+  .line b{display:block;font-family:"Noto Serif KR",serif;color:var(--clay);font-weight:600;font-size:clamp(15px,1.3vw,18px)}
+  .line span{display:block;font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.5;margin-top:4px}
+
+  /* 링크 카드 (저작권 작품) */
+  .linkcard{display:flex;flex-direction:column;justify-content:flex-end;gap:6px;aspect-ratio:16/9;min-width:0;border:1px solid var(--line);text-decoration:none;color:var(--bone-dim);padding:28px;transition:border-color .2s}
+  .linkcard:hover{border-color:var(--clay)}
+  .linkcard b{color:var(--bone);font-family:"Noto Serif KR",serif;font-size:clamp(18px,1.8vw,24px);font-weight:600}
+  .linkcard span{font-size:14px;line-height:1.55}
+  .linkcard em{font-style:normal;color:var(--clay);font-size:13px;letter-spacing:.06em;margin-top:8px}
+
+  .refs{margin-top:22px;border-top:1px solid var(--line);padding-top:12px;font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.7;max-width:72ch}
+  .refs b{display:block;font-family:"Noto Serif KR",serif;color:var(--bone);font-weight:600;margin-bottom:6px;font-size:1.15em}
+  .refs span{display:block;padding-left:14px;text-indent:-14px}
+  .refs span::before{content:"— ";color:var(--clay)}
+
+  /* 정답 */
+  .answer{padding:var(--pad-y) var(--pad-x);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,72px);align-items:start;border-bottom:1px solid var(--line)}
+  .quote{font-family:"Noto Serif KR",serif;font-size:clamp(19px,2vw,28px);line-height:1.55;max-width:32ch}
+  .quote .blank{display:inline-block;min-width:6ch;border-bottom:2px solid var(--clay);color:var(--clay);text-align:center;font-size:.85em}
+  .quote .en{display:block;margin-top:.9em;font-size:max(14px,.62em);color:var(--bone-dim);line-height:1.55}
+  .pick{font-family:"Noto Serif KR",serif;font-size:clamp(26px,3vw,44px);line-height:1.2;color:var(--clay);font-weight:600}
+  .pick small{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:max(14px,.38em);color:var(--bone-dim);margin-top:.5em;line-height:1.6}
+  .why{margin-top:22px;font-size:clamp(15px,1.3vw,18px);max-width:46ch;list-style:none}
+  .why li{padding:10px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:12px;color:var(--bone-dim)}
+  .why li:last-child{border-bottom:1px solid var(--line)}
+  .why li span:first-child{color:var(--bone);font-family:"Noto Serif KR",serif}
+  .recap{grid-column:1/-1;margin-top:10px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .recap div{border-top:2px solid var(--clay);padding-top:12px;font-size:clamp(14px,1.2vw,16px);color:var(--bone-dim)}
+  .recap b{display:block;font-family:"Noto Serif KR",serif;color:var(--bone);font-weight:600;font-size:1.12em;margin-bottom:4px}
+
+  footer{padding:24px var(--pad-x) 44px;font-size:12.5px;color:var(--bone-dim);line-height:1.75}
+  footer p+p{margin-top:6px}
+
+  @media (max-width:900px){
+    .cover,.problem,section.band,section.band.flip,.answer,.row.c2,.row.c3{grid-template-columns:minmax(0,1fr)}
+    .line,.recap{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cover-fig{min-height:46vh}
+    section.band.flip .txt{order:1}
+    section.band.flip .fig,section.band.flip .figs{order:2}
+    .fig{position:static}
+    .linkcard{aspect-ratio:auto;min-height:190px;padding:22px}
+  }
+  @media print{
+    body{background:#fff;color:#111}
+    :root{--bone:#111;--bone-dim:#555;--line:#ccc;--clay:#8a6222}
+    nav.top{display:none}
+    .cover{min-height:auto;grid-template-columns:1fr;gap:16px}
+    .cover-fig{min-height:auto}
+    .cover-fig img{height:auto;max-height:110mm;object-fit:contain;object-position:left}
+    .cover-fig figcaption{position:static;background:none;padding:8px 0 0;color:#555}
+    .cover-text{padding:0}
+    h1{font-size:34pt}
+    .fig{position:static}
+    .fig img,.cell img,.fig picture,.cell picture{max-height:130mm;width:auto;max-width:100%}
+    .linkcard{aspect-ratio:auto;min-height:0;border:1px solid #ccc}
+    section.band,.answer,.problem{break-inside:avoid;page-break-inside:avoid}
+    .read,.note,.fig,.cell{break-inside:avoid}
+    h2{break-after:avoid}
+  }
+</style>
+</head>
+<body>
+<nav class="top"><a href="/">MUMUN CLASS</a><a href="https://mumun.xyz">mumun.xyz</a></nav>
+
+<!-- 0. 표지 -->
+<header class="cover">
+  <div class="cover-text">
+    <p class="kicker">2027학년도 수능 9월 모의평가 · 영어 40번(요약문 완성) 지문에서 출발하는 <b>빛의 미술사</b></p>
+    <div>
+      <h1><span class="gr">selective visibility</span>빛 — 무엇을<br>보여주고, 무엇을<br>숨길 것인가</h1>
+      <p class="lede">지문은 무대 조명이 "더 밝게"에서 "필요한 것만"으로 바뀌었다고 말한다. 화가들은 그 전환을 350년 먼저 해냈다. 조토의 균일한 빛에서 필름 누아르의 어둠까지, 빛으로 무엇을 고를지 배워 온 600년.</p>
+    </div>
+    <p class="kicker">한광여고 미술 · 이대행</p>
+  </div>
+  <figure class="cover-fig">
+    <picture><source srcset="img/matthew.webp" type="image/webp"><img src="img/matthew.jpg" alt="카라바조, 성 마태오의 소명"></picture>
+    <figcaption><b>카라바조, 〈성 마태오의 소명〉</b> 1599–1600 · 로마 산 루이지 데이 프란체시 성당 콘타렐리 예배당</figcaption>
+  </figure>
+</header>
+
+<!-- 1. 문제 -->
+<section class="problem">
+  <div class="passage">
+    <p><span class="no">40.</span><span class="src">2027학년도 대학수학능력시험 9월 모의평가 · 영어 영역 · 다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?</span>
+    Many designers would argue that the most important element of lighting is <mark>visibility</mark>. Some even refer to it as the primary function of lighting. Visibility simply refers to the principle of using light to reveal or illuminate objects. In the early days, the job of the designer was nothing more than to create enough light so that the audience or occupants of a space could see. In many ways, this philosophy of lighting was based on the premise that <mark>more was better</mark>, and many believed that the more footcandles or lumens placed on a stage or in a room, the better visibility that you had. <mark>Since the 1950s or '60s</mark>, theatrical designing moved toward a concept that we call <mark>selective visibility</mark>, which simply refers to revealing to an audience only what needs to be seen. Hence, a less-revealing image on stage might be more appropriate for the dramatic action than a fully illuminated stage. In selective visibility, <mark>areas of low intensity, shadows, silhouettes, and high contrast</mark> can become effective elements in a lighting designer's set of tools.</p>
+    <p class="sum">↓ While stage lighting designs in the early days focused on <span class="blank">(A)</span> visibility, they later shifted to <span class="blank">(B)</span> illumination to enhance dramatic effect.</p>
+    <p class="ko"><span class="lbl">우리말 옮김</span>많은 디자이너들은 조명의 가장 중요한 요소가 <b>가시성</b>이라고 말한다. 가시성이란 빛으로 대상을 드러내는 원리다. 초기에 디자이너의 일은 관객이나 공간 안의 사람들이 볼 수 있을 만큼 빛을 만드는 것, 그 이상이 아니었다. 이 조명관은 <b>많을수록 좋다</b>는 전제 위에 서 있었고, 무대나 방에 쏟아붓는 광량이 많을수록 가시성이 좋다고 믿었다. <b>1950~60년대 이후</b> 연극 디자인은 <b>선택적 가시성</b>이라는 개념으로 옮겨 갔다. 관객에게 보여야 할 것만 보여준다는 뜻이다. 그래서 무대를 다 밝히는 것보다 덜 드러내는 화면이 극적 행동에 더 적합할 수 있다. 선택적 가시성에서는 <b>낮은 조도, 그림자, 실루엣, 강한 대비</b>가 조명 디자이너의 도구가 된다.</p>
+  </div>
+  <div class="keys">
+    <h2><small>출발점</small>지문이 던진<br>네 개념</h2>
+    <p>지문은 무대 조명 이야기지만, 주어를 바꾸면 그대로 회화사가 된다. "더 밝게"의 시대, 어둠을 발견한 화가, 빛을 조각한 무대, 그리고 그 언어를 물려받은 카메라.</p>
+    <ol>
+      <li><span class="n">1</span><span><span class="k">가시성 · 더 밝게</span><span class="s">조토와 알베르티 — 빛은 정보였다</span></span></li>
+      <li><span class="n">2</span><span><span class="k">어둠의 발견</span><span class="s">카라바조, 라투르, 라이트 — 키아로스쿠로와 테네브리즘</span></span></li>
+      <li><span class="n">3</span><span><span class="k">빛이 곧 심리</span><span class="s">렘브란트 — 군상 속 두 사람만 밝히기</span></span></li>
+      <li><span class="n">4</span><span><span class="k">선택적 가시성</span><span class="s">아피아의 무대 → 나다르의 사진 → 필름 누아르</span></span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 2. 가시성의 시대 -->
+<section class="band flip">
+  <div class="txt">
+    <h2><small>1 · 가시성의 시대</small>빛은 정보였다</h2>
+    <p>지문이 말한 초기 무대 조명 — "관객이 볼 수 있을 만큼만 밝히면 된다" — 은 중세와 초기 르네상스 회화의 태도와 같다. 그림의 임무는 <em>알아보게 하는 것</em>이었다. 그림자가 인물을 가리면 안 됐고, 어둠은 무지와 죄의 자리였다. 조토의 벽화에서 빛은 어디서 오는지 알 수 없고, 모든 인물이 고르게 밝다.</p>
+    <p>이유가 있다. 이 그림들은 예배당 벽에 걸린 <em>읽는 그림</em>이었다. 글을 모르는 신자가 성경 이야기를 알아보아야 했으니, 인물의 얼굴·손짓·옷 색은 전부 식별 가능해야 했다. 무대로 치면 관객석 맨 뒷줄까지 배우 얼굴이 보여야 하는 상황이다. 조도를 낮출 이유가 없다.</p>
+    <p>15세기 피렌체에서 알베르티가 회화 이론을 정리할 때도 빛의 역할은 '입체감(rilievo)'을 만드는 것, 즉 <em>형태를 더 잘 보이게 하는 도구</em>였다. 어둠은 아직 표현이 아니라 형태의 뒷면이었다.</p>
+    <div class="read">
+      <p class="who">레온 바티스타 알베르티<span>『회화론(De pictura)』 1435 · 원근법과 명암을 체계화한 최초의 회화 이론서</span></p>
+      <p>알베르티는 화가가 색보다 <b>흰색과 검은색의 배분</b>을 먼저 익혀야 한다고 썼다. 빛을 받는 면에는 흰색을, 반대편에는 검은색을 조금씩 더해 물체가 화면에서 <b>솟아오르는 것처럼</b> 만들라는 것. 그가 회화의 최고 미덕으로 꼽은 것이 이 rilievo, 곧 부조처럼 도드라져 보이는 효과다.</p>
+      <p>중요한 것은 그가 빛을 <b>형태에 종속된 것</b>으로 보았다는 점이다. 빛은 대상을 드러내기 위한 수단이지 감추기 위한 수단이 아니다. 지문의 "visibility"가 정확히 이 단계다 — 빛의 임무는 오직 보이게 하는 것.</p>
+    </div>
+    <div class="note"><b>용어.</b> 명암법을 뜻하는 <b>키아로스쿠로(chiaroscuro)</b>는 이탈리아어 chiaro(밝은)+scuro(어두운)의 합성어다. 알베르티 단계의 명암은 형태를 세우는 기술이었고, 카라바조 이후의 명암은 무엇을 보일지 고르는 연출이 된다. 같은 단어, 다른 목적.</div>
+  </div>
+  <figure class="fig">
+    <picture><source srcset="img/giotto.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/giotto.jpg" alt="조토, 그리스도의 애도"></picture>
+    <figcaption><b>조토, 〈그리스도의 애도〉</b> 1305년경, 프레스코 · 파도바 스크로베니 예배당 — 감정은 격렬하지만 빛은 균일하다. 그림자가 누구도 삼키지 않는다. 슬픔은 어둠이 아니라 몸의 자세와 표정으로만 표현된다.</figcaption>
+  </figure>
+</section>
+
+<!-- 3. 카라바조 -->
+<section class="band">
+  <div class="txt">
+    <h2><small>2 · 어둠의 발견</small>카라바조 —<br>빛을 손가락처럼 쓰다</h2>
+    <p>1600년 로마. 카라바조의 〈성 마태오의 소명〉은 지문의 "selective visibility"를 350년 앞서 실행한 그림이다. 세리들이 돈을 세는 어두운 방, 오른쪽 위에서 <em>한 줄기 빛</em>이 비스듬히 떨어진다. 빛은 그리스도의 손끝을 지나 탁자로 건너간다. 나머지는 어둠이 삼킨다.</p>
+    <p>이것이 <em>키아로스쿠로</em>의 극단적 용법이고, 화면 대부분을 어둠에 맡기는 카라바조식 화법을 따로 <em>테네브리즘(tenebrism, 이탈리아어 tenebroso '어두운')</em>이라 부른다. 빛은 더 이상 "보이게 하는" 도구가 아니라 <em>무엇을 볼지 결정하는</em> 도구다. 어둠은 결핍이 아니라 연출이다.</p>
+    <p>주목할 점 하나. 화면 오른쪽 위의 창은 <em>빛을 통과시키지 않는다.</em> 창은 기름 먹인 천으로 덮여 빛을 걸러낼 뿐이고, 인물을 때리는 빛은 그보다 더 위, 화면 밖에서 온다. 광원을 보여주지 않음으로써 카라바조는 그 빛을 물리적 광선이 아니라 부름(召命) 자체로 만든다. 조명 디자이너의 용어로 하면 <em>화면 밖 광원(off-stage source)</em>이다.</p>
+    <div class="read">
+      <p class="who">조반 피에트로 벨로리<span>『근대 화가·조각가·건축가 전기(Le Vite)』 1672 · 카라바조 사후 62년, 고전주의 진영의 비판</span></p>
+      <p>벨로리는 카라바조가 <b>창을 검게 가린 방</b>에서, 높은 곳에서 떨어지는 단 하나의 빛으로 모델을 비추며 그렸다고 전한다. 빛이 정수리와 얼굴 앞면에만 닿고 나머지는 어둠에 남는 그 배치가 화면의 강한 대비를 만들었다는 것이다.</p>
+      <p>그리고 이를 비난한다 — 카라바조는 이상(理想)을 세우지 않고 눈앞의 자연을 그대로 베꼈으며, 고대와 라파엘로를 버렸고, 그 때문에 젊은 화가들이 망가졌다고. <b>비판문이지만 기법 기록으로는 가장 생생하다.</b> 적대적인 증언이 종종 가장 정확한 기술(記述)이 된다는 것을 기억해 둘 만하다.</p>
+    </div>
+    <div class="read">
+      <p class="who">로베르토 롱기<span>1951년 밀라노 팔라초 레알레 카라바조 대전(大展) 기획 · 20세기 카라바조 재평가의 주역</span></p>
+      <p>19세기까지 카라바조는 '천박한 사실주의자'로 거의 잊혀 있었다. 롱기는 1951년 전시로 그를 되살리며 이렇게 주장했다 — 카라바조가 없었다면 리베라도, 페르메이르도, 라투르도, 렘브란트도 지금과 같지 않았을 것이고, 들라크루아·쿠르베·마네의 그림도 달리 그려졌을 것이라고.</p>
+      <p><b>빛을 다루는 근대 회화 전체가 이 어두운 방에서 나왔다</b>는 뜻이다. 롱기의 제자 중에는 영화감독 피에르 파올로 파솔리니가 있었다. 회화의 어둠이 스크린으로 건너간 경로가 사람 하나로도 설명된다.</p>
+    </div>
+  </div>
+  <div class="figs">
+    <figure class="fig">
+      <picture><source srcset="img/matthew.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/matthew.jpg" alt="카라바조, 성 마태오의 소명"></picture>
+      <figcaption><b>카라바조, 〈성 마태오의 소명〉</b> 1599–1600, 유채, 322×340cm · 로마 산 루이지 데이 프란체시 성당 — 빛의 방향과 그리스도의 손짓이 거의 평행이다. 누가 마태오인지는 지금도 논쟁이 있다: 자신을 가리키는 수염 난 남자인가, 고개를 숙이고 돈을 세는 젊은이인가. 빛이 답을 알려주지 않는다는 것이 이 그림의 핵심이다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4. 촛불 — 라투르 & 라이트 -->
+<section class="band wide">
+  <div class="txt">
+    <h2><small>2-1 · 화면 안의 광원</small>촛불 하나로 그리다</h2>
+    <p>카라바조의 빛은 화면 밖에서 온다. 그다음 세대는 <em>광원 자체를 화면 안에 넣었다.</em> 촛불, 등잔, 횃불. 빛의 근원이 보이니 어둠의 이유도 보인다. 관객은 "왜 저기는 어두운가"를 묻지 않게 되고, 화가는 어둠을 마음껏 쓸 수 있게 된다. 지문이 나열한 조명 디자이너의 도구 — 낮은 조도, 그림자, 실루엣, 강한 대비 — 가 17~18세기 회화에 이미 다 있다.</p>
+  </div>
+  <div class="row c2">
+    <div class="cell">
+      <picture><source srcset="img/latour.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/latour.jpg" alt="조르주 드 라투르, 참회하는 막달레나"></picture>
+      <h4>조르주 드 라투르, 〈참회하는 막달레나〉<span>1640년경 · 메트로폴리탄 미술관</span></h4>
+      <p>촛불 하나, 거울 하나, 해골 하나. 얼굴은 거의 <b>실루엣</b>이고 빛은 무릎 위 해골과 붉은 치마에 머문다. 인물이 무엇을 생각하는지 표정으로 알 수 없게 만든 뒤, 대신 <b>그가 바라보는 것</b>을 밝힌다. 감정을 얼굴에서 사물로 옮기는 조명.</p>
+      <p>라투르는 사후 <b>260여 년</b> 잊혔다가 <b>1915년 미술사가 헤르만 포스</b>의 논문으로 되살아났다 — 카라바조와 같은 운명이다. 20세기가 어둠을 다시 보기 시작했다는 뜻이기도 하다.</p>
+    </div>
+    <div class="cell">
+      <picture><source srcset="img/wright.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/wright.jpg" alt="조지프 라이트 오브 더비, 공기 펌프 속 새 실험"></picture>
+      <h4>조지프 라이트 오브 더비, 〈공기 펌프 속 새 실험〉<span>1768 · 런던 내셔널 갤러리</span></h4>
+      <p>계몽주의 시대의 테네브리즘. 탁자 위 가려진 촛불이 유일한 광원이고, 과학 실험을 둘러싼 얼굴들이 각자 다른 감정으로 <b>빛과 어둠 사이에</b> 놓인다. 겁먹은 소녀, 무심한 소년, 생각에 잠긴 노인 — 조도가 곧 배역이다.</p>
+      <p>종교화의 빛이 <b>지식의 빛</b>으로 옮겨 온 순간. 창밖의 달은 두 번째, 차가운 광원이다. 실험자는 관객을 정면으로 본다. 새를 살릴지 죽일지 결정은 아직 나지 않았다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 렘브란트 -->
+<section class="band flip">
+  <div class="txt">
+    <h2><small>3 · 빛이 곧 심리</small>렘브란트 —<br>군상 속 두 사람만</h2>
+    <p>1642년 암스테르담 민병대가 단체 초상화를 주문했다. 대원들은 지위에 따라 액수를 달리해 돈을 내고 자기 얼굴을 그림에 넣었다. 관례는 모두를 고르게, 알아보게 배치하는 것 — 지문의 "더 밝게"의 논리이자, 값을 치른 사람에 대한 예의다. 렘브란트는 대장과 부관 두 사람에게 빛을 몰아주고 나머지를 어둠과 반그늘로 밀어 넣었다. 지문의 문장 그대로 — <em>"덜 드러내는 화면이 극적 행동에 더 적합할 수 있다."</em></p>
+    <p>이 그림의 별명 '야경(夜警)'은 사실 오해다. 낮 장면인데 바니시가 검게 변해 밤처럼 보였고, 20세기 세척 이후에야 원래의 빛이 상당 부분 돌아왔다. 하지만 별명이 남은 이유가 있다 — 렘브란트의 빛은 <em>시간이 아니라 의미</em>를 비춘다. 대장과 부관 사이, 화면 중간에서 노란 옷의 소녀가 두 번째 광원처럼 빛난다. 소녀가 든 죽은 새의 발톱은 이 민병대(클로베니르, 화승총 부대)의 문장이었다 — 인물이 아니라 <em>상징</em>에 빛을 준 셈이다.</p>
+    <h3 class="sub">'렘브란트 라이팅'</h3>
+    <p>얼굴을 45도 위·옆에서 비추면 코의 그림자가 뺨의 그림자와 만나 그늘진 쪽 뺨에 <em>작은 삼각형의 빛</em>이 남는다. 눈 하나는 밝고 눈 하나는 어둠에 잠긴다. 렘브란트 초상화의 공식이었던 이 배치를 20세기 사진 스튜디오와 영화 촬영장이 그대로 가져가 '렘브란트 라이팅'이라 부른다. 1915년 할리우드에서 세실 B. 드밀이 얼굴 반쪽이 어두운 화면을 두고 제작자에게 "이건 렘브란트 조명"이라 둘러댔다는 일화가 전해진다.</p>
+    <div class="read">
+      <p class="who">루돌프 아른하임<span>『미술과 시각(Art and Visual Perception)』 1954 · 게슈탈트 심리학으로 읽은 미술, 「빛」 장</span></p>
+      <p>아른하임은 빛이 물체에 '떨어지는' 것이 아니라 물체의 <b>속성으로 지각된다</b>고 설명한다. 우리는 "저기에 빛이 비친다"가 아니라 "저 사람이 밝다"고 본다. 밝기는 절대적 광량이 아니라 <b>주변과의 관계</b>로 읽히기 때문에, 같은 회색도 어두운 배경에서는 빛나는 것처럼 보인다.</p>
+      <p>그래서 화가가 빛을 배분하는 일은 곧 <b>누가 중요하고 누가 배경인지를 정하는 일</b>이다. 렘브란트가 대장에게 준 것은 조도가 아니라 지위다.</p>
+    </div>
+    <div class="note"><b>흔한 오해 하나.</b> "대원들이 어둡게 그려진 것에 화를 냈고 그래서 렘브란트가 몰락했다"는 이야기는 <b>19세기에 만들어진 전설</b>이다. 당대에 이 그림을 나쁘게 쓴 기록은 없고, 그림값은 지불됐으며 작품은 원래 자리에 그대로 걸려 있었다. 다만 제자 사무엘 판 호흐스트라텐이 1678년 책에서 구성의 통일성을 칭찬하면서 <b>"빛을 좀 더 넣었더라면 좋았겠다"</b>는 아쉬움을 적었다 — 빛의 양을 두고 나온, 기록에 남은 유일한 불만이다.</div>
+  </div>
+  <div class="figs">
+    <figure class="fig">
+      <picture><source srcset="img/nightwatch.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/nightwatch.jpg" alt="렘브란트, 야경"></picture>
+      <figcaption><b>렘브란트, 〈야경〉(프란스 반닝 코크 대장의 민병대)</b> 1642, 유채, 현재 약 379×453cm · 암스테르담 국립미술관 — 1715년 시청 벽에 맞추려 네 변을 잘라내 원본보다 작다. 검은 옷의 대장, 노란 옷의 부관, 그리고 빛 속의 소녀. 나머지 대원들은 어둠과 반그늘 속에 놓였다.</figcaption>
+    </figure>
+    <figure class="fig">
+      <picture><source srcset="img/aristotle.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/aristotle.jpg" alt="렘브란트, 호메로스 흉상을 바라보는 아리스토텔레스"></picture>
+      <figcaption><b>렘브란트, 〈호메로스 흉상을 바라보는 아리스토텔레스〉</b> 1653, 유채 · 메트로폴리탄 미술관 — 빛이 닿는 곳은 셋뿐이다. 흰 소매, 흉상의 이마, 얼굴의 반쪽. 그늘진 뺨의 작은 삼각형이 '렘브란트 라이팅'의 원형이다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 6. 무대 -->
+<section class="band">
+  <div class="txt">
+    <h2><small>4 · 선택적 가시성</small>무대 — 빛을<br>조각하기 시작하다</h2>
+    <p>19세기 무대는 그림이었다. 배경막에 원근법으로 풍경을 그리고, 각광(footlight)과 샹들리에로 <em>전체를 균일하게</em> 밝혔다. 가스등, 이어서 전등이 들어오자 밝기는 곧 기술력이자 자랑거리였다 — 지문의 "footcandle과 lumen이 많을수록 좋다"는 바로 그 시대의 상식이다.</p>
+    <p>문제는 이것이었다. 배경막에는 그림자가 그려져 있는데 무대 위 배우에게는 그림자가 없다. 배우가 배경 앞에 <em>붙어 있는 종잇조각</em>처럼 보인다. 조명이 밝을수록 이 모순은 심해졌다.</p>
+    <p>이를 뒤집은 사람이 스위스의 <em>아돌프 아피아</em>다. 그는 그려진 배경막을 버리고 계단·단·기둥 같은 <em>입체</em>를 세운 뒤, 빛을 움직여 공간을 만들자고 했다. 배우의 몸과 구조물 위에 그림자가 생겨야 공간이 살아난다는 것. 그의 스케치는 회화보다 조각에 가깝다. 형태를 그려 넣는 대신 어둠 속에 빛의 자리를 뚫어 공간을 만든다 — 무대를 그리는 일에서 <em>무대를 조명하는 일</em>로 축이 옮겨간 것이다.</p>
+    <div class="read">
+      <p class="who">아돌프 아피아<span>『음악과 무대 연출』 1899 · 프랑스어로 썼으나 독일어판(Die Musik und die Inscenierung)이 먼저 나왔고, 원어판은 1963년에야 출간 · 현대 무대조명 이론의 출발점</span></p>
+      <p>아피아는 빛을 둘로 나눴다. 무대 전체를 고르게 채워 그저 보이게만 하는 <b>확산광</b>과, 방향을 가지고 그림자를 만드는 <b>'살아 있는 빛'</b>. 그가 보기에 전자는 조명이 아니라 밝힘일 뿐이고, 후자만이 표현한다.</p>
+      <p>그는 바그너 악극을 예로 들며, 음악에는 시간에 따른 강약과 흐름이 있는데 무대는 왜 시종 같은 밝기여야 하느냐고 물었다. <b>빛도 음악처럼 시간 속에서 변해야 한다</b>는 것. 지문의 "visibility"와 "selective visibility"의 구분이 여기서 시작됐다 — 지문이 말하는 1950~60년대의 전환은, 아피아의 이론이 실제 극장의 표준이 되기까지 걸린 반세기다.</p>
+    </div>
+    <div class="read">
+      <p class="who">스탠리 매캔들리스<span>『무대조명의 방법(A Method of Lighting the Stage)』 1932 · 예일 드라마스쿨 교수, Theatre Arts Books(뉴욕) 간 · 미국 조명 디자인의 교과서</span></p>
+      <p>매캔들리스는 아피아의 이념을 현장 공식으로 바꿨다. 배우를 좌우 45도 위에서 두 광원으로 비추되 <b>한쪽은 따뜻한 색, 한쪽은 차가운 색</b>으로 놓는다. 얼굴에 입체가 생기고 색온도 차이가 부드러운 그림자를 만든다. 렘브란트 라이팅의 무대판이다.</p>
+      <p>그는 무대를 여러 구역으로 나누어 각각 따로 조명하는 방식도 제시했다. 구역별로 밝기를 다르게 줄 수 있다는 뜻이고, 이때부터 조명 디자이너의 질문은 "얼마나 밝게"가 아니라 <b>"어디를, 어느 방향에서, 어떤 색으로"</b>가 된다. 지문이 말하는 도구 상자(set of tools)가 여기서 완성된다.</p>
+    </div>
+  </div>
+  <figure class="fig">
+    <picture><source srcset="img/appia.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/appia.jpg" alt="아돌프 아피아, 입센 '어린 에욜프' 2막 무대 디자인"></picture>
+    <figcaption><b>아돌프 아피아, 입센 〈어린 에욜프〉 2막 무대 디자인</b> 1927년 마그데부르크 독일연극전시회 출품작(뉘옹 소장품 대여) · 사진 루돌프 하촐트 — 그려진 배경도, 원근법 풍경도 없다. 검은 덩어리와 하나의 밝은 틈, 그리고 낮은 단 하나. 형태를 그리는 대신 <b>빛이 뚫고 들어오는 자리로 공간을 지었다.</b></figcaption>
+  </figure>
+</section>
+
+<!-- 7. 사진 -->
+<section class="band flip">
+  <div class="txt">
+    <h2><small>4-1 · 카메라가 물려받다</small>사진 — 빛으로<br>그리는 초상</h2>
+    <p>여기서 시간을 40여 년 되돌린다. 아피아가 무대의 빛을 이론으로 정리하기 전에, 파리의 사진관에서는 같은 일이 이미 손끝으로 벌어지고 있었다.</p>
+    <p>사진은 어원부터 '빛으로 쓰기'(photo-graphein)다. 1850년대 파리의 나다르는 유리 지붕 스튜디오에서 <em>부드러운 측광</em>만으로 인물을 찍었다. 인공조명도, 소품도, 그려진 배경도 쓰지 않았다. 배경은 어둡게, 얼굴의 한쪽은 그늘로. 알베르티에서 렘브란트까지 회화가 200여 년에 걸쳐 도달한 그 빛을, 사진은 출발점으로 삼았다.</p>
+    <p>나다르의 〈웃는 피에로〉는 무대와 사진이 만나는 지점이다. 마임 배우 장샤를 드뷔로가 흰 분장과 흰 옷으로 어두운 배경 앞에 선다. 빛이 붙잡는 것은 흰색뿐 — <em>실루엣과 고대비</em>, 지문의 도구 목록 그대로다. 무대에서는 몸짓으로만 말하던 배우가 사진에서는 <em>빛으로만</em> 말한다.</p>
+    <div class="note"><b>왜 사진은 '더 밝게'로 돌아가지 않았나.</b> 초기 사진은 감광 재료의 감도가 낮아 노출에 몇 초에서 몇십 초가 걸렸다. 빛이 절실했다는 뜻이다. 그런데도 초상 사진가들은 균일광을 택하지 않았다. 고객이 원한 것은 '기록'이 아니라 <b>회화처럼 보이는 자신</b>이었기 때문이다. 빛의 선택은 기술이 결정하지 않는다. 취향과 전통이 결정한다.</div>
+    <div class="note"><b>기록 하나.</b> 나다르는 1861년 파리 지하묘지와 하수도를 인공광으로 촬영했다. 자연광이 전혀 없는 곳에서 빛을 <b>가지고 들어간</b> 최초의 사진가 중 한 명이다. 밖에서 들어오는 빛을 받아 적던 사진이, 빛을 설치하는 일로 바뀌는 장면.</div>
+  </div>
+  <div class="figs">
+    <figure class="fig">
+      <picture><source srcset="img/pierrot.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/pierrot.jpg" alt="나다르, 웃는 피에로"></picture>
+      <figcaption><b>나다르 · 아드리앵 투르나숑, 〈웃는 피에로(Pierrot Laughing)〉</b> 1855 · 메트로폴리탄 미술관 — 마임 배우 장샤를 드뷔로. 흰 옷과 흰 분장이 빛을 받고 배경은 사라진다. 메트는 이 사진을 나다르와 동생 아드리앵 투르나숑의 <b>공동 저작</b>으로 표기한다. 1855년 파리 만국박람회 메달도 아드리앵의 이름으로 받았다.</figcaption>
+    </figure>
+    <figure class="fig">
+      <picture><source srcset="img/pelletan.webp" type="image/webp"><img loading="lazy" decoding="async" src="img/pelletan.jpg" alt="나다르, 외젠 펠르탕 초상"></picture>
+      <figcaption><b>나다르, 〈외젠 펠르탕〉</b> 1855–59 · 메트로폴리탄 미술관 — 측광, 어두운 배경, 반쪽 얼굴. 렘브란트의 초상 공식이 유리판 위로 옮겨진 모습.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 8. 영화 -->
+<section class="band">
+  <div class="txt">
+    <h2><small>4-2 · 어둠의 장르</small>영화 — 그림자가<br>인물을 말하다</h2>
+    <p>1940년대 할리우드의 범죄 영화들은 지문의 도구 목록을 그대로 장르 문법으로 만들었다. 블라인드 사이로 갈라진 빛, 반쪽만 보이는 얼굴, 벽에 길게 늘어진 그림자, 젖은 아스팔트의 반사. 전후 프랑스 평론가들이 이 미국 영화들을 묶어 <em>필름 누아르(film noir, '검은 영화')</em>라 불렀다. 인물의 도덕적 회색 지대를 빛의 회색 지대로 옮긴 것이다.</p>
+    <p>여기에는 기술적 사정도 있었다. 저예산 영화는 세트를 다 지을 수 없었고, 어둠은 <em>짓지 않은 공간을 감추는 가장 싼 방법</em>이었다. 결핍에서 나온 선택이 양식이 됐다. 독일에서 망명해 온 촬영감독들이 가져온 표현주의 조명 감각도 여기에 겹친다. 다만 누아르 조명의 대표 이름인 존 앨턴은 독일계가 아니라 <em>헝가리 소프론 태생</em>으로 1919년 미국으로 건너온 사람이다 — 이 어둠은 한 나라에서 온 것이 아니다.</p>
+    <p>1970년대 고든 윌리스는 한 걸음 더 갔다. 〈대부〉(1972) 첫 장면, 돈 콜레오네의 서재. 빛은 위에서만 떨어지고 <em>눈은 그림자에 잠긴다.</em> 관객은 그가 무슨 생각을 하는지 볼 수 없다 — 그것이 연출이다. 윌리스 자신이 뒷날 밝히기를, 관객이 브란도의 속을 읽지 못하게 눈을 일부러 가려 두었다가 필요한 순간에만 열어 보였다고 한다. 스튜디오는 "얼굴이 안 보인다"고 항의했다. 동료 촬영감독 콘래드 홀이 그에게 붙인 별명이 <em>'어둠의 왕자(Prince of Darkness)'</em>였다.</p>
+    <div class="read">
+      <p class="who">존 앨턴<span>『빛으로 그리기(Painting with Light)』 1949 · 촬영감독이 직접 쓴 최초의 본격 촬영 교본</span></p>
+      <p>필름 누아르의 대표 촬영감독이 쓴 이 책은 제목 자체가 선언이다 — 촬영은 기록이 아니라 <b>회화</b>다. 앨턴은 얼굴 전체를 고르게 밝히는 당시의 관행을 거부하고, <b>하나의 광원과 그것이 만드는 그림자</b>로 장면을 설계하라고 가르쳤다. 조명기를 더 켜는 대신 꺼서 만드는 화면.</p>
+      <q lang="en">It's not what you light — it's what you DON'T light.</q>
+      <p class="attr">— 책이 아니라 1994년 인터뷰에서 한 말로 전해진다. 그의 조명관을 가장 짧게 요약한 문장이다.</p>
+      <p>그는 야간 장면에서 화면의 대부분을 검게 두고 젖은 노면·유리·연기처럼 <b>빛을 되돌려주는 표면</b>만 남기는 방법을 정리했다. 스튜디오는 "너무 어둡다"고 불평했고 동료들은 그를 낮게 보았지만, 그 어둠이 장르가 됐다. 지문의 문장으로 하면 — 덜 드러내는 화면이 더 극적이다.</p>
+    </div>
+    <div class="line">
+      <div><b>1305 · 1435</b><span>조토·알베르티 — 빛은 형태를 드러내는 도구</span></div>
+      <div><b>1600 · 1642</b><span>카라바조·렘브란트 — 어둠이 연출이 되다</span></div>
+      <div><b>1640 · 1768</b><span>라투르·라이트 — 광원이 화면 안으로</span></div>
+      <div><b>1855</b><span>나다르 — 카메라가 그 빛을 물려받다</span></div>
+      <div><b>1899 · 1932</b><span>아피아·매캔들리스 — 무대의 빛 이론</span></div>
+      <div><b>1940s · 1972</b><span>앨턴·윌리스 — 어둠이 장르가 되다</span></div>
+    </div>
+  </div>
+  <div class="figs">
+    <a class="linkcard" href="https://store.ascmag.com/products/painting-with-light" target="_blank" rel="noopener">
+      <b>존 앨턴 촬영, 〈T-Men〉·〈The Big Combo〉</b>
+      <span>1947–1955 · 필름 누아르의 교과서적 조명. 담배 연기 속 역광, 벽면의 실루엣.</span>
+      <span>영화 스틸은 저작권 보호 작품이라 이 페이지에 싣지 않는다. 미국촬영감독협회(ASC) 스토어의 『Painting with Light』 책 소개 페이지로 대신한다 — 목차만 봐도 그가 빛을 어떻게 분류했는지 보인다. 초판은 Macmillan(1949), 복간은 캘리포니아대 출판부(1995).</span>
+      <em>보러 가기 →</em>
+    </a>
+    <a class="linkcard" href="https://www.bfi.org.uk/news/godfather-cinematographer-gordon-willis-dies-aged-82" target="_blank" rel="noopener">
+      <b>고든 윌리스 촬영, 〈대부〉</b>
+      <span>1972 · 첫 장면 서재의 톱 라이트. 눈이 보이지 않는 초상.</span>
+      <span>역시 저작권 보호 작품 — 영국영화협회(BFI)의 윌리스 회고 기사로 대신한다.</span>
+      <em>보러 가기 →</em>
+    </a>
+  </div>
+</section>
+
+<!-- 9. 정답 -->
+<section class="answer">
+  <div>
+    <h2><small>다시 문제로</small>요약문 완성</h2>
+    <p class="quote">초기 무대 조명은 가시성을 <span class="blank">(A)</span>하는 데 집중했으나, 이후 극적 효과를 높이기 위한 <span class="blank">(B)</span> 조명으로 옮겨 갔다.
+      <span class="en">While stage lighting designs in the early days focused on (A) visibility, they later shifted to (B) illumination to enhance dramatic effect.</span>
+    </p>
+    <div class="note"><b>푸는 순서.</b> (A)는 "more was better", "the more … the better visibility"에서, (B)는 "revealing only what needs to be seen"에서 각각 근거를 찾는다. 두 빈칸 중 <b>근거가 더 분명한 쪽을 먼저 확정</b>하고 나머지를 소거하는 것이 요약문 완성 문항의 기본 전략이다.</div>
+  </div>
+  <div>
+    <!-- ▼ 선택지 ①~⑤ 및 정답: 평가원 원본 PDF와 대조 후 확정할 것 (특히 (B) strategic / selective) -->
+    <p class="pick">① maximizing · strategic<small>가시성을 극대화 → 전략적 조명</small></p>
+    <ul class="why">
+      <li><span>②</span><span>increasing · uniform — (A)는 되지만 후반이 '균일한' 조명이면 지문과 정반대</span></li>
+      <li><span>③</span><span>controlling · minimal — 초기는 통제가 아니라 '더 밝게'. minimal도 '적게'가 아니라 '골라서'가 요지</span></li>
+      <li><span>④</span><span>reducing · targeted — (B)는 그럴듯하지만 초기가 가시성을 줄였다는 건 정반대</span></li>
+      <li><span>⑤</span><span>limiting · purposeful — 역시 (B)만 맞고 (A)가 틀림. 매력적인 오답</span></li>
+    </ul>
+    <div class="note"><b>함정.</b> ④·⑤는 (B)가 정답과 거의 같은 뜻이라 눈에 먼저 들어온다. 그러나 요약문은 <b>두 빈칸의 대비</b>로 완성된다. 한쪽만 맞는 선택지는 전부 오답이다.</div>
+  </div>
+  <div class="recap">
+    <div><b>알베르티·조토</b>빛은 형태를 드러내는 도구 — 가시성</div>
+    <div><b>카라바조·라투르</b>어둠을 화면의 절반 이상에 — 선택</div>
+    <div><b>렘브란트</b>빛의 배분이 곧 인물의 비중 — 심리</div>
+    <div><b>아피아 → 앨턴·윌리스</b>무대와 카메라가 그 언어를 물려받다</div>
+  </div>
+</section>
+
+<section class="band wide" style="padding-top:0">
+  <div class="txt">
+    <div class="refs">
+      <b>더 읽을거리</b>
+      <span>레온 바티스타 알베르티, 『회화론』(1435) — 제2권, 빛·그림자와 rilievo 부분.</span>
+      <span>조반 피에트로 벨로리, 『근대 화가·조각가·건축가 전기』(1672) — 카라바조 항목.</span>
+      <span>로베르토 롱기, 『카라바조』(1952) — 1951년 밀라노 전시 이후 정리한 평전.</span>
+      <span>루돌프 아른하임, 『미술과 시각』(1954, 국역 미진사) — 「빛」 장.</span>
+      <span>아돌프 아피아, 『음악과 무대 연출』(독일어판 1899 / 프랑스어 원어판 1963) / 에드워드 고든 크레이그, 『연극 예술에 관하여』(1911).</span>
+      <span>스탠리 매캔들리스, 『무대조명의 방법』(1932, Theatre Arts Books, 뉴욕 · 4판 1958).</span>
+      <span>존 앨턴, 『Painting with Light』(초판 Macmillan, 1949 / 캘리포니아대 출판부 복간 1995).</span>
+      <span>암스테르담 국립미술관 'Operation Night Watch' — 2019년부터 진행 중인 〈야경〉 조사·복원 공개 기록.</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>도판 출처 · Wikimedia Commons(퍼블릭 도메인): Caravaggio, <i>La vocazione di San Matteo</i> / Giotto, <i>Beweinung Christi</i>, Cappella degli Scrovegni(The Yorck Project, PD-Art) / Rembrandt, <i>The Night Watch</i>(Rijksmuseum) / Joseph Wright of Derby, <i>An Experiment on a Bird in the Air Pump</i>(The National Gallery, London) / Adolphe Appia, <i>Klein Eyolf, II. Akt</i> — 1927년 마그데부르크 독일연극전시회 도록 수록, 촬영 Rudolf Hatzold(1950년 사망, 보호기간 만료).</p>
+  <p>메트로폴리탄 미술관 Open Access(CC0): Georges de La Tour, <i>The Penitent Magdalen</i>(1978.517) / Rembrandt, <i>Aristotle with a Bust of Homer</i>(61.198) / Nadar, <i>Pierrot Laughing</i>(1998.57) / Nadar, <i>Eugène Pelletan</i>(1991.1198).</p>
+  <p>지문 출처 · 2027학년도 대학수학능력시험 9월 모의평가(2026.9.2 시행) 영어 영역 40번, 한국교육과정평가원. 문제지의 저작권은 한국교육과정평가원에 있으며, 이 페이지는 저작권법 제25조에 따른 <b>학교 수업 목적</b>의 이용입니다. 원문·정답은 <a href="https://cdn.kice.re.kr/09mo-27suneung/index.html" target="_blank" rel="noopener">평가원 공개 페이지</a>에서 확인하십시오.</p>
+  <p>저작권 보호 작품(필름 누아르·〈대부〉 스틸)은 싣지 않고 외부 링크로 대신했습니다. 수업 자료 · 2026 · <a href="/">MUMUN CLASS</a></p>
+</footer>
+
+</body>
+</html>
