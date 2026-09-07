@@ -44,7 +44,9 @@
   /* 문제 화면 */
   .problem{padding:var(--pad-y) var(--pad-x);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,5vw,72px)}
   .passage{font-family:"Noto Serif KR",serif;font-size:clamp(15px,1.35vw,19px);line-height:1.85;color:var(--bone-dim);max-width:70ch}
-  .passage .src{display:block;font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--clay);letter-spacing:.04em;margin-bottom:10px}
+  .passage .src{display:block;font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--clay);letter-spacing:.04em;margin-bottom:10px;line-height:1.6}
+  .passage .src a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
+  .passage .src a:hover{color:var(--clay)}
   .passage .no{color:var(--clay);font-weight:600;margin-right:.4em}
   .passage mark{background:none;color:var(--bone);border-bottom:1px solid var(--clay);padding-bottom:1px}
   .passage .blank{display:inline-block;min-width:11ch;border-bottom:2px solid var(--clay)}
@@ -96,12 +98,12 @@
   .vs q{font-family:"Noto Serif KR",serif;display:block;color:var(--bone);margin-top:10px;font-size:1.02em;quotes:"“" "”"}
 
   .txt h3.sub{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,2vw,28px);margin:1.6em 0 .5em;max-width:none}
-  .fire{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+  .fire{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 34px}
   .fire div{border-top:2px solid var(--clay);padding-top:12px}
   .fire b{display:block;font-family:"Noto Serif KR",serif;color:var(--clay);font-weight:600;font-size:clamp(15px,1.4vw,19px);margin-bottom:4px}
   .fire span{display:block;font-size:clamp(13px,1.15vw,16px);color:var(--bone-dim);line-height:1.55}
   .fire span b{display:inline;font-family:"Noto Sans KR",sans-serif;color:var(--bone);font-weight:500;font-size:1em}
-  section.band.wide .txt p,#pollock .txt p{max-width:72ch}
+  section.band.wide .txt p,#pollock .txt p{max-width:72ch;line-height:1.85}
   #pollock{grid-template-columns:1fr 1.5fr;align-items:start}
   /* 제욱시스 */
   .tale{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -193,7 +195,7 @@
 <!-- 1. 문제 -->
 <section class="problem">
   <div class="passage">
-    <p><span class="no">33.</span><span class="src">2026년 9월 고1 전국연합학력평가 · 영어 영역</span> The ancient Greeks felt that the visual artist's goal was to <mark>copy visual experience</mark>. This approach appears in the <mark>realism of ancient Greek sculpture and pottery</mark>. We must sadly note that, due to the action of time and weather, <mark>no paintings from ancient Greek artists exist today</mark>. We can only surmise their quality based on <mark>tales such as that of Zeuxis and Parhassios</mark>, the obvious skill in ancient Greek sculpture, and in drawings that survive on ancient Greek pottery. This definition of art as copying reality has a problem, though. <mark>Jackson Pollock</mark>, a leader in the New York School of the 1950's, intentionally did not copy existing objects in his art. While painting these works, Pollock and his fellow artists would consciously avoid making marks or passages that resembled recognizable objects. They succeeded at making artwork that did not copy anything, thus demonstrating that the ancient Greek view of art as <mark>mimesis — simple copying</mark> — <span class="blank">&nbsp;</span>.</p>
+    <p><span class="no">33.</span><span class="src">2026년 9월 고1 전국연합학력평가 · 영어 영역 · 인천광역시교육청 주관, 2026. 9. 2. 시행 · <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs?targetCd=D100" target="_blank" rel="noopener">문제지 원본 내려받기(EBSi 기출문제)</a></span> The ancient Greeks felt that the visual artist's goal was to <mark>copy visual experience</mark>. This approach appears in the <mark>realism of ancient Greek sculpture and pottery</mark>. We must sadly note that, due to the action of time and weather, <mark>no paintings from ancient Greek artists exist today</mark>. We can only surmise their quality based on <mark>tales such as that of Zeuxis and Parhassios</mark>, the obvious skill in ancient Greek sculpture, and in drawings that survive on ancient Greek pottery. This definition of art as copying reality has a problem, though. <mark>Jackson Pollock</mark>, a leader in the New York School of the 1950's, intentionally did not copy existing objects in his art. While painting these works, Pollock and his fellow artists would consciously avoid making marks or passages that resembled recognizable objects. They succeeded at making artwork that did not copy anything, thus demonstrating that the ancient Greek view of art as <mark>mimesis — simple copying</mark> — <span class="blank">&nbsp;</span>.</p>
   </div>
   <div class="keys">
     <h2><small>출발점</small>지문이 던진<br>다섯 개념</h2>
@@ -428,7 +430,7 @@
 
 <footer>
   <p><b>도판 출처 및 라이선스</b><br>〈도리포로스〉 사진: tetraktys, <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a> (Wikimedia Commons). &nbsp;〈크리티오스 소년〉 사진: Ismoon, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — 동일조건변경허락. &nbsp;〈아나비소스 쿠로스〉 사진: Francesco Bini, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — 동일조건변경허락. &nbsp;엑세키아스 암포라(Akhilleus Aias, MGEt 16757): 퍼블릭 도메인. &nbsp;에우프로니오스 크라테르: 사진 Jaime Ardiles-Arce, 퍼블릭 도메인. &nbsp;라파엘로 〈아테네 학당〉: 퍼블릭 도메인. &nbsp;다게르 〈탕플 대로〉: 퍼블릭 도메인. &nbsp;보스코레알레 빌라 침실 벽화, 〈메미와 사부〉(48.111): 메트로폴리탄 미술관 Open Access, CC0. &nbsp;제욱시스·파라시오스 도해는 설명용 창작 그림.</p>
-  <p>출전 · 플라톤 『국가』 10권 / 아리스토텔레스 『시학』 4장 / 플리니우스 『박물지』 35권 / 로젠버그 「The American Action Painters」(1952) / 그린버그 「Modernist Painting」(1960). 2026년 9월 고1 전국연합학력평가(교육청 주관) 영어 33번 · 수업 자료 · 2026 · <a href="/">MUMUN CLASS</a></p>
+  <p>출전 · 플라톤 『국가』 10권 / 아리스토텔레스 『시학』 4장 / 플리니우스 『박물지』 35권 / 로젠버그 「The American Action Painters」(1952) / 그린버그 「Modernist Painting」(1960). 지문 출처 · 2026년 9월 고1 전국연합학력평가 영어 영역 33번(인천광역시교육청 주관, 2026. 9. 2. 시행). 해당 문항의 저작권은 주관 교육청에 있으며, 이 페이지는 미술 교과 수업 자료로서 해설을 목적으로 인용했습니다. 문제지 원본은 <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs?targetCd=D100" target="_blank" rel="noopener">EBSi 기출문제</a>에서 내려받을 수 있습니다. · 수업 자료 · 2026 · <a href="/">MUMUN CLASS</a></p>
 </footer>
 
 </body>
