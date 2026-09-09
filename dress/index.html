@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>옷은 남지 않는다 — 복식사와 회화 · MUMUN CLASS</title>
+<meta name="description" content="2026학년도 수능 영어 41~42번 복식사 지문에서 출발하는 미술사 수업자료 — 홀바인, 벨라스케스, 앵그르, 패션 플레이트, 조선 초상화·풍속화·출토복식, 사모트라케의 니케, 레오나르도의 드레이퍼리 습작, 마이브리지.">
+<meta property="og:title" content="옷은 남지 않는다 — 복식사와 회화">
+<meta property="og:description" content="실물 의복은 남지 않는다. 남은 것은 그림이다. · 한광여고 미술">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#17110d;
+    --clay:#c9673b;
+    --clay-deep:#8f4426;
+    --bone:#efe3cf;
+    --bone-dim:#b8a58b;
+    --line:rgba(239,227,207,.18);
+    --pad-x:clamp(28px,6vw,88px);
+    --pad-y:clamp(44px,7vw,96px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{background:var(--ground);color:var(--bone);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--clay)}
+  a:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+  img{filter:saturate(.85)}
+
+  /* 표지 */
+  .cover{min-height:100svh;display:grid;grid-template-columns:1.1fr 1fr;border-bottom:1px solid var(--line)}
+  .cover-text{padding:calc(var(--pad-x) + 24px) var(--pad-x) var(--pad-x);display:flex;flex-direction:column;justify-content:space-between}
+  .kicker{font-size:clamp(14px,1.3vw,17px);color:var(--bone-dim)}
+  .kicker b{color:var(--clay);font-weight:500}
+  h1{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(40px,6.2vw,92px);line-height:1.08;letter-spacing:-.01em;margin:.4em 0 .3em}
+  h1 .gr{display:block;font-size:.42em;font-weight:400;color:var(--clay);letter-spacing:.08em;margin-bottom:.35em}
+  .lede{max-width:34ch;font-size:clamp(17px,1.6vw,22px);line-height:1.75}
+  .cover-fig{position:relative;overflow:hidden;min-height:60vh}
+  .cover-fig img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block}
+  .cover-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 22px;background:linear-gradient(transparent,rgba(23,17,13,.92));font-size:13px;color:var(--bone-dim)}
+  figcaption b{color:var(--bone);font-weight:500}
+
+  /* 문제 화면 */
+  .problem{padding:var(--pad-y) var(--pad-x);border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,5vw,72px)}
+  .passage{font-family:"Noto Serif KR",serif;font-size:clamp(15px,1.35vw,19px);line-height:1.85;color:var(--bone-dim);max-width:70ch}
+  .passage .src{display:block;font-family:"Noto Sans KR",sans-serif;font-size:13px;color:var(--clay);letter-spacing:.04em;margin-bottom:10px;line-height:1.6}
+  .passage .src a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
+  .passage .src a:hover{color:var(--clay)}
+  .passage .no{color:var(--clay);font-weight:600;margin-right:.4em}
+  .passage mark{background:none;color:var(--bone);border-bottom:1px solid var(--clay);padding-bottom:1px}
+  .passage .blank{display:inline-block;min-width:11ch;border-bottom:2px solid var(--clay)}
+  .keys h2{margin-bottom:.4em}
+  .keys p{font-size:clamp(15px,1.3vw,18px);color:var(--bone-dim);max-width:34ch;margin-bottom:18px}
+  .keys ol{list-style:none}
+  .keys li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:clamp(15px,1.3vw,18px);align-items:baseline}
+  .keys li:last-child{border-bottom:1px solid var(--line)}
+  .keys li .n{font-family:"Noto Serif KR",serif;color:var(--clay)}
+  .keys li .k{color:var(--bone);font-weight:500}
+  .keys li .s{display:block;color:var(--bone-dim);font-size:.85em}
+
+  /* 밴드 */
+  section.band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,5vw,72px);padding:var(--pad-y) var(--pad-x);border-bottom:1px solid var(--line);align-items:center}
+  section.band.flip{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+  section.band.flip .txt{order:2}
+  section.band.flip .fig{order:1}
+  section.band.wide{grid-template-columns:1fr}
+  h2{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(28px,3.4vw,46px);line-height:1.22;margin-bottom:.55em}
+  h2 small{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.42em;color:var(--clay);margin-bottom:.5em;letter-spacing:.02em}
+  .txt p{font-size:clamp(16px,1.35vw,19px);max-width:40ch}
+  .txt p+p{margin-top:.9em}
+  .txt em{font-style:normal;color:var(--clay)}
+  .txt .note{margin-top:1.4em;padding:14px 16px;border-left:2px solid var(--clay);font-size:clamp(14px,1.15vw,16px);color:var(--bone-dim);max-width:44ch}
+  .txt .note b{color:var(--bone);font-weight:500}
+  .fig{margin:0}
+  .fig img{width:100%;display:block}
+  .fig figcaption{font-size:13px;color:var(--bone-dim);margin-top:10px;line-height:1.5}
+
+  /* 비교 행 */
+  .row{display:grid;gap:14px}
+  .row.c4{grid-template-columns:repeat(4,1fr)}
+  .row.c2{grid-template-columns:1fr 1fr}
+  .cell img{width:100%;display:block;aspect-ratio:3/5;object-fit:cover;object-position:center top}
+  .row.c2 .cell img{aspect-ratio:4/3}
+  .cell h4{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(15px,1.3vw,18px);margin:12px 0 4px}
+  .cell h4 span{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.78em;color:var(--clay)}
+  .cell p{font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.55}
+  .cell p b{color:var(--bone);font-weight:500}
+  .arrow{font-family:"Noto Serif KR",serif;color:var(--clay);text-align:center;font-size:clamp(14px,1.2vw,16px);margin-top:8px}
+
+  /* 플라톤 vs 아리스토텔레스 */
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px}
+  .vs div{border:1px solid var(--line);padding:20px 22px}
+  .vs h3{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(18px,1.7vw,24px);margin-bottom:.35em}
+  .vs h3 span{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.62em;color:var(--clay)}
+  .vs p{font-size:clamp(14px,1.15vw,16px);color:var(--bone-dim);line-height:1.6}
+  .vs p b{color:var(--bone);font-weight:500}
+  .vs q{font-family:"Noto Serif KR",serif;display:block;color:var(--bone);margin-top:10px;font-size:1.02em;quotes:"“" "”"}
+
+  .txt h3.sub{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,2vw,28px);margin:1.6em 0 .5em;max-width:none}
+  .fire{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 34px}
+  .fire div{border-top:2px solid var(--clay);padding-top:12px}
+  .fire b{display:block;font-family:"Noto Serif KR",serif;color:var(--clay);font-weight:600;font-size:clamp(15px,1.4vw,19px);margin-bottom:4px}
+  .fire span{display:block;font-size:clamp(13px,1.15vw,16px);color:var(--bone-dim);line-height:1.55}
+  .fire span b{display:inline;font-family:"Noto Sans KR",sans-serif;color:var(--bone);font-weight:500;font-size:1em}
+  section.band.wide .txt p,#pollock .txt p{max-width:72ch;line-height:1.85}
+  #pollock{grid-template-columns:1fr 1.5fr;align-items:start}
+  /* 제욱시스 */
+  .tale{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .panel{border:1px solid var(--line);padding:22px 22px 20px}
+  .panel svg{width:100%;height:auto;display:block;margin-bottom:14px}
+  .panel h3{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(18px,1.6vw,22px);margin-bottom:.35em}
+  .panel p{font-size:clamp(14px,1.15vw,16px);color:var(--bone-dim);line-height:1.6}
+  .panel p b{color:var(--bone);font-weight:500}
+  .verdict{grid-column:1/-1;font-family:"Noto Serif KR",serif;font-size:clamp(17px,1.5vw,21px);padding-top:16px;border-top:1px solid var(--line)}
+
+  /* 계보 타임라인 */
+  .line{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:22px;border-top:1px solid var(--line)}
+  .line div{padding:16px 16px 0 0;border-right:1px solid var(--line)}
+  .line div:last-child{border-right:0}
+  .line b{display:block;font-family:"Noto Serif KR",serif;color:var(--clay);font-weight:600;font-size:clamp(15px,1.3vw,18px)}
+  .line span{display:block;font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.5;margin-top:4px}
+
+  /* 폴록 슬롯 */
+  .slot{aspect-ratio:16/9;border:1px dashed rgba(201,103,59,.7);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--bone-dim);font-size:14px;line-height:1.6}
+  .slot b{display:block;color:var(--clay);font-weight:500;margin-bottom:6px;font-size:16px}
+
+  /* 정답 */
+  .answer{padding:var(--pad-y) var(--pad-x);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:start;border-bottom:1px solid var(--line)}
+  .quote{font-family:"Noto Serif KR",serif;font-size:clamp(20px,2.1vw,30px);line-height:1.5;max-width:30ch}
+  .quote .blank{display:inline-block;min-width:7ch;border-bottom:2px solid var(--clay)}
+  .quote .en{display:block;margin-top:.9em;font-size:.62em;color:var(--bone-dim);line-height:1.55}
+  .pick{font-family:"Noto Serif KR",serif;font-size:clamp(30px,3.8vw,56px);line-height:1.15;color:var(--clay);font-weight:600}
+  .pick small{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.36em;color:var(--bone-dim);margin-top:.5em}
+  .why{margin-top:22px;font-size:clamp(15px,1.3vw,18px);max-width:42ch;list-style:none}
+  .why li{padding:10px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:12px;color:var(--bone-dim)}
+  .why li:last-child{border-bottom:1px solid var(--line)}
+  .why li span:first-child{color:var(--bone);font-family:"Noto Serif KR",serif}
+  .why li i{font-style:normal;font-family:"Noto Serif KR",serif;color:var(--bone);display:block;margin-bottom:3px}
+  .recap{grid-column:1/-1;margin-top:10px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .recap div{border-top:2px solid var(--clay);padding-top:12px;font-size:clamp(14px,1.2vw,17px);color:var(--bone-dim)}
+  .recap b{display:block;font-family:"Noto Serif KR",serif;color:var(--bone);font-weight:600;font-size:1.15em;margin-bottom:4px}
+
+  .refs{margin-top:22px;border-top:1px solid var(--line);padding-top:12px;font-size:clamp(13px,1.1vw,15px);color:var(--bone-dim);line-height:1.6}
+  .refs b{display:block;font-family:"Noto Serif KR",serif;color:var(--bone);font-weight:600;margin-bottom:6px}
+  .refs span{display:block;padding-left:12px;text-indent:-12px}
+  .refs span::before{content:"— ";color:var(--clay)}
+  nav.top{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;padding:18px var(--pad-x);font-size:13px;color:var(--bone-dim)}
+  nav.top a{color:var(--bone-dim);text-decoration:none;letter-spacing:.06em}
+  nav.top a:hover{color:var(--clay)}
+  body{position:relative}
+  .pollock-link{display:block;aspect-ratio:16/9;border:1px solid var(--line);text-decoration:none;color:var(--bone-dim);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;transition:border-color .2s}
+  .pollock-link:hover{border-color:var(--clay)}
+  .pollock-link b{color:var(--bone);font-family:"Noto Serif KR",serif;font-size:clamp(18px,1.8vw,24px);font-weight:600}
+  .pollock-link span{font-size:14px}
+  .pollock-link em{font-style:normal;color:var(--clay);font-size:13px;letter-spacing:.06em;margin-top:8px}
+  footer{padding:24px var(--pad-x) 40px;font-size:12px;color:var(--bone-dim);line-height:1.7}
+
+  @media (max-width:820px){
+    .cover,.problem,section.band,section.band.flip,#pollock,.answer,.vs,.tale,.row.c2{grid-template-columns:1fr}
+    .row.c4{grid-template-columns:1fr 1fr}
+    .line{grid-template-columns:1fr 1fr}
+    .recap,.fire{grid-template-columns:1fr}
+    .cover-fig{min-height:46vh}
+    section.band.flip .txt{order:1}section.band.flip .fig{order:2}
+  }
+  @media print{
+    body{background:#fff;color:#111}
+    :root{--bone:#111;--bone-dim:#555;--line:#ccc;--clay:#9a4a26}
+    img{filter:none}
+    .cover{min-height:auto}
+    section.band,.answer,.problem{break-inside:avoid}
+  }
+
+  /* --- 03번 전용: 도판을 자르지 않는다 --- */
+  .cover-fig{background:#0b0a09;display:flex;align-items:center;justify-content:center;padding:clamp(20px,3vw,44px)}
+  .cover-fig img{width:auto;height:auto;max-width:100%;max-height:82vh;object-fit:contain}
+  .cover-fig figcaption{background:linear-gradient(transparent,rgba(23,17,13,.96))}
+  .cell img{aspect-ratio:auto;height:auto;object-fit:contain;max-height:560px;width:auto;max-width:100%;margin:0 auto}
+  .cell{display:flex;flex-direction:column}
+  .row.c2 .cell img{aspect-ratio:auto}
+  .fig img{max-height:760px;width:auto;max-width:100%;margin:0 auto}
+  .passage .sum{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:.95em}
+  .passage .sum u{text-underline-offset:3px}
+  .why li i{font-style:normal;font-family:"Noto Serif KR",serif;color:var(--bone);display:block;margin-bottom:3px}
+  .figs{display:grid;gap:30px}
+  .cell h4 span{display:block;font-family:"Noto Sans KR",sans-serif;font-weight:400;font-size:.78em;color:var(--clay);margin-top:2px}
+  .pick + .pick{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+  @media (max-width:820px){
+    .cover-fig img{max-height:52vh}
+    .cell img{max-height:400px}
+    .fig img{max-height:none}
+  }
+  .passage .ko{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.92em;color:var(--bone-dim)}
+  .passage .ko b{color:var(--bone);font-weight:600}
+  .passage .ko .lbl{display:block;color:var(--bone);font-weight:600;margin-bottom:6px;font-family:"Noto Sans KR",sans-serif;font-size:.9em;letter-spacing:.04em}
+  .passage .ko em{font-style:normal;color:var(--clay)}
+</style>
+</head>
+<body>
+<nav class="top"><a href="/">MUMUN CLASS</a><a href="https://mumun.xyz/lab/">MUMUN LAB</a></nav>
+
+<header class="cover">
+  <div class="cover-text">
+    <p class="kicker">2026학년도 수능 · 영어 41~42번(장문 독해) 지문의 <b>미술사 개념 풀이</b></p>
+    <div>
+      <h1><span class="gr">history of dress</span>옷은<br>남지 않는다</h1>
+      <p class="lede">지문은 복식사가 회화·판화·조각에 사료를 빚지고 있다고 말한다. 옷은 왜 고르게 남지 않았는가. 그 빈틈을 그림이 메운다면, 그 그림은 얼마나 믿을 수 있는가.</p>
+    </div>
+    <p class="kicker">한광여고 미술 · 이대행</p>
+  </div>
+  <figure class="cover-fig">
+    <img src="img/holbein.jpg" alt="한스 홀바인, 대사들, 1533">
+    <figcaption><b>한스 홀바인(子), 〈대사들〉</b> 1533 · 런던 내셔널 갤러리 — 검은 벨벳, 스라소니 모피, 분홍 새틴, 갈색 다마스크가 각기 다른 광택으로 그려졌다. 바닥에 길게 늘어진 것은 비스듬히 봐야 해골로 보이는 왜상(anamorphosis)이다.</figcaption>
+  </figure>
+</header>
+
+<section class="problem">
+  <div class="passage">
+    <p><span class="no">41~42.</span><span class="src">2026학년도 대학수학능력시험 · 영어 영역 · 한국교육과정평가원, 2025. 11. 13. 시행 · <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs" target="_blank" rel="noopener">문제지 원본 내려받기(EBSi 기출문제)</a></span>
+    There is an obvious problem with the history of dress in all of its displays and that is, although <mark>textiles survive from early periods</mark> and cultures of recorded history, <mark>actual garments do not provide an uninterrupted flow of evidence</mark> across the same long time-span. Therefore, to give the study of dress equal significance to other areas such as <mark>architecture, painting, prints, drawings and sculpture</mark>, it was (a) inevitable that these other areas would provide much of the source material. <mark>The history of surviving dress really only starts in the 17th century</mark>, and like all artefacts described as fine or decorative art, is a highly visual subject. However, unlike most of the categories of collection and study that make up those areas, <mark>it is fluid rather than static</mark>. Garments should be seen in (b) movement on a human body, not frozen on a display figure. This is one of the many difficulties when curating collections of costume and also why some modern writers find costume collections physically and intellectually (c) lifeless. Fortunately, in the period after 1660, when more items of dress survive to enrich our understanding of the history of the subject, there are also many <mark>painted, printed, photographed and filmed sources of evidence of people in clothing, caught in movement</mark>. Often a variety of different types of illustrative examples will (d) provide evidence about how a garment was worn within the period in which it was made. Without the information contained in art in all of its forms, from drawing to sculpture, it is (e) unlikely that displays of historic dress would be awkward imitations of the intentions of their original makers and owners.</p>
+    <p class="sum">* garment: 의복 &nbsp;·&nbsp; <b>41.</b> 윗글의 제목으로 가장 적절한 것은? &nbsp;/&nbsp; <b>42.</b> 밑줄 친 (a)~(e) 중에서 문맥상 낱말의 쓰임이 적절하지 <u>않은</u> 것은?</p>
+    <p class="ko"><span class="lbl">우리말 옮김</span>복식사에는 그것을 전시하는 모든 방식에 걸쳐 분명한 문제가 하나 있다. 기록된 역사의 이른 시기와 여러 문화에서 <b>직물은 남아 있지만</b>, <b>실제 의복은 그 긴 시간에 걸쳐 끊기지 않는 증거의 흐름을 제공하지 못한다</b>는 것이다. 그래서 복식 연구에 <b>건축·회화·판화·소묘·조각</b> 같은 다른 분야와 같은 무게를 실어 주려면, 바로 그 다른 분야들이 자료의 상당 부분을 제공하는 것이 (a) <b>불가피했다</b>. <b>현존하는 의복의 역사는 사실상 17세기에야 시작되며</b>, 순수미술이나 장식미술로 분류되는 모든 인공물이 그렇듯 대단히 시각적인 주제다. 다만 그 분야들을 이루는 대부분의 수집·연구 대상과 달리, <b>복식은 정지해 있지 않고 유동적이다</b>. 의복은 전시용 인체 모형 위에 굳어 있는 것이 아니라 사람 몸 위에서 (b) <b>움직이는</b> 상태로 보여야 한다. 이것이 복식 컬렉션을 기획할 때 부딪히는 여러 어려움 가운데 하나이고, 어떤 현대 저자들이 복식 컬렉션을 물리적으로도 지적으로도 (c) <b>생기가 없다</b>고 여기는 이유이기도 하다. 다행히 1660년 이후 시기에는 복식사의 이해를 넓혀 줄 의복 실물이 더 많이 남아 있을 뿐 아니라, <b>옷을 입고 움직이는 순간이 포착된 회화·판화·사진·영상 자료</b>도 많다. 서로 다른 종류의 도판 자료들이, 한 의복이 만들어진 시기에 그 옷을 어떻게 입었는지에 대한 증거를 (d) <b>제공해</b> 주는 경우가 많다. 소묘에서 조각에 이르는 온갖 형태의 미술이 담고 있는 정보가 없다면, 역사 복식 전시는 원래 만든 사람과 입은 사람의 의도를 어설프게 흉내 낸 것이 될 <b>가능성이 (e) 낮을</b> 것이다. <em>— 마지막 문장을 원문 그대로 옮기면 이렇게 논리가 어긋난다. 42번이 묻는 지점이 바로 여기다.</em></p>
+  </div>
+  <div class="keys">
+    <h2><small>출발점</small>지문이 던진<br>다섯 개념</h2>
+    <p>복식사 이야기지만, 실은 <b>미술이 다른 학문의 일차 사료가 되는 경우</b>를 설명하는 글이다. 밑줄 친 대목을 순서대로 짚고 마지막에 문제로 돌아온다.</p>
+    <ol>
+      <li><span class="n">1</span><span><span class="k">옷은 왜 남지 않는가</span><span class="s">재료의 수명, 재단과 재활용, 남은 옷의 편향</span></span></li>
+      <li><span class="n">2</span><span><span class="k">그림이 사료가 되는 순간</span><span class="s">초상화와 패션 플레이트 — 개인의 한 벌, 시대의 유형</span></span></li>
+      <li><span class="n">3</span><span><span class="k">조선의 경우</span><span class="s">관복 초상, 풍속화, 그리고 출토복식</span></span></li>
+      <li><span class="n">4</span><span><span class="k">정지한 옷과 움직이는 옷</span><span class="s">조각·소묘, 그리고 사진과 영화</span></span></li>
+      <li><span class="n">5</span><span><span class="k">그림은 중립적이지 않다</span><span class="s">관찰된 것과 구성된 것을 나누기</span></span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band flip">
+  <div class="txt">
+    <h2><small>1 · 사라지는 물건</small>입기 위해<br>만들어진 것</h2>
+    <p>회화와 조각은 대체로 보관을 염두에 두고 만들어진다. 옷은 사정이 다르다. 옷은 <em>입기 위해</em> 만들어지고, 입는 동안 마모되고, 유행이 바뀌면 뜯어서 다시 재단되기도 한다. 비단과 금사는 회수되어 다른 옷이 되고, 자수는 잘라 내어 다른 바탕에 옮겨 붙기도 한다. 값비싼 직물이라고 반드시 잘 남는 것은 아니다 — 값이 나갈수록 <em>다시 쓰일 이유도 커지기</em> 때문이다.</p>
+    <p>재료 자체도 약하다. 견과 모는 단백질 섬유라 빛·습기·해충에 약하고, 염료는 색이 빠지며, 땀이 닿는 겨드랑이와 목선부터 삭는다. 면과 마도 미생물에 분해된다. 도자기나 금속과 달리 <em>직물은 썩는 물건</em>이다.</p>
+    <h3 class="sub">그래도 남는 경우 — 세 가지 조건</h3>
+    <p>직물이 오래 남는 곳은 대개 특수한 환경이다. <em>극도로 건조한 곳</em>(이집트 무덤, 타클라마칸 사막), <em>산소가 차단된 습지</em>(덴마크 청동기 참나무 관의 모직 옷), <em>밀봉된 무덤</em>이 대표적이다. 이 밖에도 염분이 많은 땅, 언 땅, 금속 부장품과 닿아 광물로 치환된 직물 등이 알려져 있다. 이런 경우는 대개 <em>우연히 조건이 맞은 것</em>이지만, 스투레 가문의 옷처럼 <em>사람이 뜻을 두고 보관해 온 사례</em>도 있다.</p>
+    <p>그래서 박물관 복식 컬렉션은 <em>덜 입은 옷</em> 쪽으로 기울어 있다. 예복, 혼례복, 수의처럼 몇 번 입지 않고 보관된 옷들이다. 일상복, 노동복, 아이 옷, 속옷은 거의 남지 않는다. 남아 있는 옷만 보고 시대를 재구성하면 <em>부유하고 격식 있는 쪽으로 기울어진 그림</em>이 나온다.</p>
+    <div class="note"><b>지문의 첫 문장을 정확히 읽자.</b> 의복이 "끊기지 않는 증거의 흐름(an uninterrupted flow of evidence)"을 만들지 못한다고 했다. <b>옷이 하나도 남지 않았다는 뜻이 아니라, 시대와 계층에 걸쳐 고르게 남지 않았다는 뜻이다.</b> 이 페이지의 제목 "옷은 남지 않는다"는 그 사정을 줄인 표현일 뿐, 문자 그대로 읽으면 안 된다. 실제로 1567년 스웨덴 스투레 가문 사람들이 입었던 옷은 웁살라 대성당에 지금도 보존돼 있다. 남은 것이 있고, 없는 구간이 있다.</div>
+    <div class="note"><b>1660년이라는 숫자.</b> 지문은 이 시점 이후로 남아 있는 의복이 늘고, 동시에 옷 입은 사람을 담은 그림·판화·사진·영상 자료도 많아진다고 말한다. <b>지문이 말하는 것은 여기까지다.</b> 왜 하필 그 무렵인지에 대한 설명은 지문에 없고, 이 페이지도 추측으로 채우지 않는다. 연도의 배경을 알아보려면 원저자가 근거로 삼은 자료부터 찾아야 한다.</div>
+  </div>
+  <figure class="fig">
+    <img src="img/meninas.jpg" alt="디에고 벨라스케스, 시녀들, 1656">
+    <figcaption><b>디에고 벨라스케스, 〈시녀들〉</b> 1656 · 마드리드 프라도 미술관 — 마르가리타 공주와 시녀들의 좌우로 뻗은 실루엣은 속에 <b>과르다인판테</b>라는 골조가 들어가 있어서 생긴다. 등나무·고래수염·철사로 짠 이 골조는 옷을 버릴 때 재료로 회수되었고 거의 남지 않았다. 그 구조는 주로 회화를 통해 짐작된다.</figcaption>
+  </figure>
+</section>
+
+<section class="band">
+  <div class="txt">
+    <h2><small>2 · 초상화</small>옷이 곧<br>그림의 정보였다</h2>
+    <p>실물이 없으면 남는 것은 재현이다. 초상화는 이 점에서 특수한 지위를 갖는다. 초상화의 목적 가운데 하나가 애초에 <em>입은 사람의 지위를 보여 주는 것</em>이었기 때문에, 옷은 배경이 아니라 그림의 주요 정보였다. 화가는 얼굴만큼이나 직물의 종류를 구별해 그려야 했다.</p>
+    <p>홀바인의 〈대사들〉에서 왼쪽 인물의 검은 벨벳과 스라소니 모피, 오른쪽 인물의 갈색 다마스크는 광택과 결이 달리 그려져 있다. 벨벳은 빛을 먹고, 새틴은 날카롭게 반사하고, 모피는 가장자리가 흐려진다 — 그 차이를 그릴 줄 아는 것이 화가의 기량이었다. 앵그르의 〈무아테시에 부인〉에서는 꽃무늬 프린트와 레이스가 견본처럼 정밀해서, 당시 <em>직물 생산 수준</em>까지 함께 읽힌다.</p>
+    <div class="note"><b>배경 하나 — 사치금지법.</b> 중세와 근세 유럽의 여러 지역에는 신분에 따라 입을 수 있는 옷감·색·장식을 규정한 법이 있었다. 특정 모피나 금사, 진홍색이 일정 신분 위에만 허용되기도 했다. 다만 이런 법이 있었다는 사실만으로 <b>화가가 그것을 정확히 옮겨 그렸다고 단정할 수는 없다.</b> 법이 언제 어디에 적용됐는지, 그림이 어떤 상황에서 그려졌는지를 따로 확인해야 한다.</div>
+    <h3 class="sub">판화 — 유행을 유통시킨 매체</h3>
+    <p>초상화가 개인의 옷을 기록했다면, 판화는 <em>유행 자체</em>를 기록하고 퍼뜨렸다. 18세기 프랑스의 복식 판화집과 19세기 잡지의 패션 플레이트는 옷 입은 인물을 정면·측면으로 보여 주고 옷감과 부속품의 이름을 캡션으로 달았다. 회화가 한 사람의 한 벌을 남겼다면, 판화는 <em>한 시기의 유형</em>을 남겼다.</p>
+    <p>패션 플레이트는 동판에 찍어 손으로 색을 칠했고, 잡지에 실려 국경을 넘어 유통됐다. 유행을 기록하는 동시에 <em>제안하고 퍼뜨리는</em> 매체였다는 뜻이다. 복식사가 이 자료를 다룰 때 조심하는 이유이기도 하다 — 플레이트에 실린 옷이 실제로 얼마나 입혔는지는 <em>이 그림만으로는 알 수 없다.</em></p>
+    <p>지문이 "painted, printed, photographed and filmed"라고 매체를 나열한 것은 단순한 열거가 아니다. 각 매체가 남기는 정보의 층위가 다르다.</p>
+  </div>
+  <div class="figs">
+    <figure class="fig">
+      <img src="img/ingres.jpg" alt="앵그르, 무아테시에 부인, 1856">
+      <figcaption><b>장 오귀스트 도미니크 앵그르, 〈무아테시에 부인〉</b> 1856 · 런던 내셔널 갤러리 — 완성까지 12년이 걸린 초상. 그사이 유행이 바뀌어 드레스 표현이 달라졌다고 알려져 있다. 뒤 거울에 비친 옆모습도 함께 보라.</figcaption>
+    </figure>
+    <figure class="fig">
+      <img src="img/fashionplate.jpg" alt="애커먼 패션 플레이트, 외출복">
+      <figcaption><b>루돌프 애커먼 발행, 〈외출복(Walking Dress)〉 패션 플레이트</b> 1820년대 · 로스앤젤레스 카운티 미술관(LACMA) — 잡지 『Repository of Arts』에 삽입돼 유통된 채색 판화. 실물이 남지 않은 시기·계층의 복식을 확인할 때 일차 자료가 된다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band wide">
+  <div class="txt">
+    <h2><small>3 · 조선의 경우</small>초상화, 풍속화, 그리고 무덤</h2>
+    <p>조선의 초상화는 사실 묘사를 중시한 전통으로 알려져 있다 — <em>터럭 한 올이라도 다르면 그 사람이 아니다</em>(一毫不似 便是他人). 관복의 사모·단령·흉배·품대에는 착용자의 신분과 관직을 나타내는 요소가 들어 있어서, 『경국대전』·『국조오례의』 같은 문헌의 복식 규정과 <em>대조해 볼 수 있다</em>. 유럽의 사치금지법이 그림 속 모피를 읽는 단서이듯, 조선에서는 흉배의 짐승 종류와 띠의 재질이 비슷한 단서가 된다. 다만 어느 쪽이든 <em>규정이 있었다는 것과 그림이 규정대로 그려졌다는 것은 다른 문제</em>다.</p>
+  </div>
+  <div class="row c2">
+    <div class="cell">
+      <img src="img/chae.jpg" alt="채제공 초상 시복본">
+      <h4>공적인 옷 — 관복 초상<span>이명기, 〈채제공 초상 일괄〉 시복본, 1792 · 보물 제1477-1호 · 수원화성박물관</span></h4>
+      <p>옅은 분홍 <b>시복</b>에 <b>사모</b>를 쓰고 화문석에 앉아 손에 쥘부채와 향낭을 들었다. 모자와 옷과 띠에 신분·관직을 나타내는 요소가 들어 있다. 이 그림은 <b>글과 실물로 함께 검증되는 드문 사례</b>이기도 하다 — 아래를 보라.</p>
+    </div>
+    <div class="cell">
+      <img src="img/kimhongdo.jpg" alt="김홍도, 씨름">
+      <h4>사용 중인 옷 — 풍속화<span>김홍도, 〈씨름〉(단원풍속도첩), 18세기 후반 · 보물 · 국립중앙박물관</span></h4>
+      <p>초상화가 남기지 않는 것이 여기 있다. 걷어 올린 소매, 동여맨 허리, 벗어 둔 짚신, 갓을 젖혀 쓴 사람. <b>움직이는 몸 위의 옷</b>이다 — 지문이 말한 "not frozen on a display figure"가 그림 안에서 이미 일어나 있다.</p>
+    </div>
+  </div>
+  <div class="txt">
+    <h3 class="sub">교차 검증을 실제로 해보면 — 〈채제공 초상〉</h3>
+    <p>마지막에 "문헌·실물·그림을 겹쳐 보라"고 결론만 내는 것보다, 한 점으로 직접 해보는 편이 빠르다. 이 초상은 세 층이 모두 남아 있다.</p>
+    <p><em>① 그림에서 보이는 것</em> — 옅은 분홍 시복, 사모, 화문석, 그리고 두 손에 든 쥘부채와 향낭. 손을 굳이 옷 밖으로 꺼내 물건을 들려 놓았다.<br>
+    <em>② 글로 확인되는 것</em> — 화면 오른쪽 위에 채제공이 직접 쓴 자찬문이 있고, 부채와 향낭이 <b>정조에게서 받은 것</b>이라는 내용이 적혀 있다. 그 아래에는 화가가 이명기임을, 1791년 어진을 그린 뒤 이듬해 장황했음을 밝힌 기록이 있다. 손을 드러낸 구성이 <b>우연이 아니라는 근거</b>가 그림 안의 글에서 나온다.<br>
+    <em>③ 실물로 확인되는 것</em> — 그 <b>향낭이 실제로 남아 있다.</b> 초상 1점, 유지 초본 3점과 함께 향낭과 함이 하나의 보물로 지정돼 있다. 그림에 그려진 물건을 손으로 볼 수 있는 경우다.</p>
+    <p><em>④ 그래도 확정하기 어려운 것</em> — 시복 직물의 정확한 조직과 염료, 채제공이 이 옷을 평소 얼마나 입었는지, 주름과 색이 실물 그대로인지. 세 층을 겹쳐도 <em>남는 빈칸이 있다.</em> 교차 검증은 답을 다 채우는 작업이 아니라, <em>어디까지 말할 수 있는지 선을 긋는 작업</em>이다.</p>
+
+    <h3 class="sub">지문의 전제를 다시 보는 곳 — 조선의 출토복식</h3>
+    <p>지문은 "현존 의복의 역사는 사실상 17세기부터 시작된다"고 말한다. 유럽 복식 컬렉션의 사정을 요약한 문장이다. 조선에는 다른 조건이 있었다.</p>
+    <p>조선 사대부의 무덤에는 <em>회곽묘(灰隔墓)</em> — 관 둘레를 석회로 두껍게 싸서 굳힌 구조 — 가 많았다. 석회가 굳으며 공기와 물이 차단되고, 그 안의 옷이 수백 년을 견뎠다. 그래서 조선에서는 <em>15~16세기 옷이 실물로 남아 있다.</em> 단국대 석주선기념박물관은 이런 출토복식과 전세유물을 만여 점 소장하고 있고, 15세기 왕실 종친의 답호부터 조선 후기 관복까지 이어진다.</p>
+    <p>이것이 지문을 부정하는 것은 아니다. 유럽에도 앞서 본 스투레 가문의 옷처럼 16세기 실물이 남아 있고, 조선의 출토복식도 무덤에서 나온 것이라 <em>수의와 부장복 쪽으로 기울어져 있다</em>. 어느 쪽이든 "남아 있다 / 없다"의 문제가 아니라 <em>무엇이 어떤 편향으로 남았는가</em>의 문제다. 그러니 지문을 읽을 때 <em>"어디를 기준으로 한 말인가"를 묻는 습관</em>은 필요하다.</p>
+    <p class="note"><b>다만 주의.</b> "터럭 한 올"은 얼굴 묘사에 관한 원칙으로 전해지는 말이다. 복식이 같은 기준으로 그려졌다고 단정할 수는 없고, 관복이 제도적 기호를 담는다는 점과는 구분해서 읽는 편이 안전하다.</p>
+  </div>
+</section>
+
+<section class="band flip">
+  <div class="txt">
+    <h2><small>4 · 유동하는 것</small>정지한 옷과<br>움직이는 옷</h2>
+    <p>지문의 두 번째 문제로 돌아온다. 옷은 <em>유동적(fluid)</em>인데 컬렉션은 옷을 정지시킨다. 마네킹 위의 드레스는 형태는 지키지만 <em>움직임은 사라진다</em>. 어떤 저자들이 복식 컬렉션을 "물리적으로도 지적으로도 생기가 없다(lifeless)"고 말한 이유다.</p>
+    <p>실제로 전시는 늘 타협이다. 옛 옷은 지금 사람의 몸에 맞지 않아 마네킹을 따로 깎아야 하고, 무게를 견디지 못해 눕혀 놓기도 한다. 조명을 밝히면 색이 빠지므로 어둡게 둔다. <em>옷을 보존하려는 조치가 옷을 가장 옷답지 않게 만든다.</em></p>
+    <p>옷이 <em>움직이는 모습</em>은 다른 자료에서 볼 수 있다. 다만 여기서부터는 <em>무엇을 보여 주는 자료인지 종류를 구분</em>해야 한다.</p>
+    <p>먼저 조각이다. 〈사모트라케의 니케〉에서 맞바람에 눌린 천은 몸에 붙고, 뒤로 밀려난 천은 겹쳐 흐른다. 다만 이것은 어느 날의 옷을 기록한 것이 아니라, <em>조각가가 움직이는 천을 표현한 방식</em>이다. 이런 <em>젖은 옷 주름</em>은 천을 통해 몸을 드러내려는 그리스 조각의 관습이기도 하다. 관찰과 조형적 구성이 함께 들어 있다.</p>
+    <p>레오나르도의 드레이퍼리 습작은 성격이 또 다르다. 바사리의 기록에 따르면 그는 점토로 만든 작은 인형에 <em>점토를 적신 천</em>을 씌워 굳힌 뒤, 그 주름을 관찰하며 그렸다. 즉 이것은 사람이 입고 움직이는 옷이 아니라 <em>고정해 놓은 천의 주름과 명암을 연구한 기록</em>이다. 그럼에도 천이 무게를 받아 어떻게 접히는지에 대해서는 대단히 정밀한 자료가 된다.</p>
+  </div>
+  <div class="figs">
+    <figure class="fig">
+      <img src="img/nike.jpg" alt="사모트라케의 니케">
+      <figcaption><b>〈사모트라케의 니케〉</b> 기원전 2세기 · 파리 루브르 박물관 — 천이 몸에 붙는 면과 뒤로 날리는 면을 한 화면에 담았다. 실제 옷의 기록이라기보다, 관찰에 조형적 관습이 겹쳐진 표현으로 보는 편이 정확하다.</figcaption>
+    </figure>
+    <figure class="fig">
+      <img src="img/leonardo.jpg" alt="레오나르도 다 빈치, 앉은 인물의 드레이퍼리 습작">
+      <figcaption><b>레오나르도 다 빈치, 〈앉은 인물의 드레이퍼리 습작〉</b> 1470년대 · 파리 루브르 박물관 — 인물도 얼굴도 없이 천만 그렸다. 점토 인형에 점토를 적신 천을 씌워 굳힌 뒤 관찰했다는 바사리의 기록이 전한다.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band">
+  <div class="txt">
+    <h2><small>4-1 · 카메라가 이어받다</small>사진과 영화 —<br>움직임을 붙잡다</h2>
+    <p>지문이 나열한 매체 중 마지막 둘, <em>photographed and filmed</em>는 앞의 것들과 또 다르다. 화가와 조각가는 옷의 움직임을 관찰한 뒤 <em>다시 구성</em>했지만, 카메라는 셔터가 열린 <em>그 순간에 일어난 일</em>을 기록한다.</p>
+    <p>1878년 이후 에드워드 마이브리지는 여러 대의 카메라를 나란히 놓고 사람과 동물의 동작을 연속으로 찍었다. 목적은 복식 연구가 아니라 운동 분석이었지만, 결과물은 <em>긴 치마가 걸을 때 어떻게 접히고 펴지는지</em>를 단계별로 보여 준다. 다만 이것도 <em>촬영을 위해 설정된 조건 아래의 동작</em>이라는 점은 기억해 두자.</p>
+    <p>이어서 영화가 등장하자 옷은 처음으로 <em>연속된 시간 안에서</em> 기록된다. 지문의 표현 그대로 "caught in movement"다. 오늘날 복식사가 20세기 이후를 다룰 때 영상 자료의 비중이 큰 이유이고, 동시에 <em>이 시기부터는 그림에 덜 의존해도 된다</em>는 뜻이기도 하다.</p>
+    <div class="note"><b>그래도 카메라는 중립이 아니다.</b> 사진사는 자세를 지시하고, 조명을 고르고, 어떤 프레임을 남길지 선택한다. 마이브리지도 배경에 격자를 세우고 모델에게 정해진 동작을 반복시켰다. 기계가 기록해도 <b>무엇을 기록할지는 사람이 정한다.</b></div>
+  </div>
+  <figure class="fig">
+    <img src="img/muybridge.jpg" alt="에드워드 마이브리지, 동물 운동, 1880년대">
+    <figcaption><b>에드워드 마이브리지, 〈동물 운동(Animal Locomotion)〉</b> 1880년대 · 메트로폴리탄 미술관 — 긴 옷을 입고 움직이는 인물의 연속 촬영. 격자 배경 앞에서 정해진 동작을 반복시켜 찍었다. 한 벌의 옷이 한 동작에서 어떻게 변형되는지를 단계로 나누어 보여 준다.</figcaption>
+  </figure>
+</section>
+
+<section class="band wide">
+  <div class="txt">
+    <h2><small>5 · 사료로서의 한계</small>그림은 중립적인 기록이 아니다</h2>
+    <p>여기까지가 회화의 쓸모라면, 다음은 회화의 한계다. 초상화 속 옷이 실제로 그 사람의 옷이었는지는 <em>별개의 문제</em>다.</p>
+    <p>화가는 옷을 이상화한다. 주름을 정리하고, 실루엣을 다듬고, 색을 화면 구성에 맞게 바꾼다. 17세기 영국 초상화에서는 특정 시기의 유행을 따르지 않는 이른바 <em>시대 밖의 의상</em>이 자주 그려졌는데, 초상이 금세 낡아 보이는 것을 막기 위한 선택으로 설명된다. 화실에 의상을 비치해 두고 여러 모델에게 돌려 입힌 공방도 있었다. 신화나 고전을 빌린 초상에서는 아예 당대에 존재하지 않는 옷이 그려진다.</p>
+    <p>제작 기간도 변수다. 앞서 본 앵그르의 〈무아테시에 부인〉은 완성까지 12년이 걸렸고, 그사이 유행이 바뀌면서 드레스 표현이 달라졌다. 초상 한 점 안에 <em>서로 다른 시점의 선택이 겹쳐 있을 수 있다</em>는 뜻이다. 그림 속 옷을 볼 때 "어느 해의 옷인가"부터 따져야 하는 이유다.</p>
+    <p>따라서 회화를 복식 사료로 읽을 때는 두 층을 나누어야 한다. <em>관찰된 것</em>과 <em>구성된 것</em>. 문헌 규정, 남아 있는 실물, 같은 시기 다른 화가의 그림을 겹쳐 보는 교차 검증이 필요한 이유다. 지문이 "a variety of different types of illustrative examples"라고 <em>여러 종류</em>를 강조한 것도 이 뜻으로 읽을 수 있다.</p>
+    <div class="vs">
+      <div>
+        <h3>롤랑 바르트<span>『유행의 체계』 1967 · 옷은 세 겹으로 존재한다</span></h3>
+        <p>바르트는 유행을 분석하면서 옷을 세 층으로 나눴다. 실제로 <b>입는 옷</b>, 사진이나 그림으로 <b>재현된 옷</b>, 말과 글로 <b>서술된 옷</b>. 셋은 겹치지만 같지 않고 각각 다른 규칙으로 작동한다. 복식사가 다루는 자료 대부분이 두 번째와 세 번째 층에 속한다는 사실을 이 구분이 드러낸다.</p>
+      </div>
+      <div>
+        <h3>앤 홀랜더<span>『Seeing Through Clothes』 1978 · 옷과 그림은 함께 변한다</span></h3>
+        <p>홀랜더는 복식의 변화를 재봉 기술이나 재료의 역사로만 설명하지 않고, <b>그 시대가 몸을 그리는 방식</b>과 나란히 놓고 봤다. 그림에서 본 이상적 비례가 옷의 실루엣을 결정하고, 그 옷을 입은 몸이 다시 그림으로 그려지는 순환이다. 옷이 그림을 따라가기도 한다는 관점이다.</p>
+      </div>
+    </div>
+    <div class="vs" style="margin-top:18px">
+      <div>
+        <h3>에일린 리베이로<span>『The Art of Dress』 1995 · 회화를 사료로 읽는 방법</span></h3>
+        <p>리베이로는 미술사와 복식사를 겹쳐 놓고, 초상화 속 의상을 <b>언제 사실 기록으로 신뢰할 수 있고 언제 회화적 관습으로 보아야 하는지</b>를 구분하는 작업을 했다. 그림을 복식 자료로 쓰기 위한 판별 기준을 세운 연구로 참조된다.</p>
+      </div>
+      <div>
+        <h3>지문으로 돌아가면<span>미술은 왜 사료가 되는가</span></h3>
+        <p>지문의 마지막 문장이 핵심이다 — 미술이 담고 있는 정보가 없었다면 역사 복식 전시는 <b>원래 만든 사람들의 의도를 어설프게 흉내 낸 것</b>에 그쳤을 것이다. 미술 작품이 미술의 대상이면서 동시에 다른 분야의 <b>일차 사료</b>로 기능하는 경우다. 그리고 그 사료를 계속 의심해야 하는 경우이기도 하다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="answer">
+  <div>
+    <h2><small>다시 문제로</small>제목과 어휘</h2>
+    <p class="quote">옛 옷은 남아 있지만, 모든 시대와 계층이 고르게 남지는 않았다. 그 빈틈을 <span class="blank">&nbsp;</span>이 메운다.
+      <span class="en">41. 윗글의 제목으로 가장 적절한 것은?<br>42. (a)~(e) 중 문맥상 낱말의 쓰임이 적절하지 <u>않은</u> 것은?</span>
+    </p>
+    <p class="note" style="max-width:none"><b>42번 풀이.</b> 미술이 담은 정보가 <u>없다면</u> 복식 전시는 어설픈 흉내가 <b>될</b> 것이다. 그런데 (e)는 <i>unlikely</i>(그렇지 않을 것이다)라서 논리가 뒤집혀 있다. <i>likely</i>가 맞다. 나머지 (a) inevitable, (b) movement, (c) lifeless, (d) provide는 모두 문맥과 맞는다.</p>
+  </div>
+  <div>
+    <p class="pick">41. ② Visual Sources: Filling in the Gaps of Dress History<small>시각 자료 — 복식사의 빈틈을 메우다</small></p>
+    <p class="pick">42. ⑤ (e) unlikely → likely<small>부정 조건문에서 논리가 뒤집힌 낱말</small></p>
+    <ul class="why">
+      <li><span>①</span><span><i>Dress as Visual Arts: Record What You Wear Now!</i>복식을 시각예술로 — 지문에 '지금 기록하라'는 주장은 없다</span></li>
+      <li><span>③</span><span><i>Why Do Collectors Want the Unknown Dresses of History?</i>수집가의 욕망 — 지문의 관심사가 아니다</span></li>
+      <li><span>④</span><span><i>Dress Culture: Searching for the Origin of Human Clothing</i>의복의 기원 — 지문은 기원이 아니라 사료 문제를 다룬다</span></li>
+      <li><span>⑤</span><span><i>Seeing Is Believing! Importance of Illustration in Dress Design</i>디자인을 위한 삽화 — 지문은 디자인이 아니라 역사 연구 이야기다</span></li>
+    </ul>
+  </div>
+  <div class="recap">
+    <div><b>덜 남은 것</b>일상복, 노동복, 속옷, 골조 — 남은 옷은 예복 쪽으로 기울어 있다</div>
+    <div><b>남은 것</b>초상화의 한 벌, 판화의 유형, 조각·소묘·사진의 움직임</div>
+    <div><b>의심할 것</b>화가가 관찰한 것과 구성한 것 — 교차 검증이 필요하다</div>
+  </div>
+</section>
+
+<section class="band wide" style="padding-top:0">
+  <div class="txt">
+    <div class="refs">
+      <b>더 읽을거리</b>
+      <span>롤랑 바르트, 『유행의 체계』(1967, 국역 동문선) — 실제 옷·이미지 옷·글 옷의 구분.</span>
+      <span>Anne Hollander, <i>Seeing Through Clothes</i>(1978) — 복식과 회화의 상호 규정.</span>
+      <span>Aileen Ribeiro, <i>The Art of Dress: Fashion in England and France 1750–1820</i>(1995).</span>
+      <span>단국대학교 석주선기념박물관 — 조선 출토복식·전세유물 만여 점. 매년 발굴 복식 특별전을 연다.</span>
+      <span>국가유산청 국가유산포털 — 「채제공 초상 일괄」(보물 제1477호) 항목에서 자찬문 내용과 함께 지정된 향낭·초본 정보를 확인할 수 있다.</span>
+      <span>웁살라 대성당(스웨덴) — 1567년 스투레 가문의 의복. 16세기 유럽 실물 복식이 남은 대표 사례.</span>
+      <span>덴마크 국립박물관 'Textile preservation' — 직물이 남는 여러 환경(건조·수침·염분·동결·광물화)을 정리해 두었다.</span>
+      <span>국립중앙박물관 e뮤지엄 — 〈단원풍속도첩〉 전 25면 고해상 이미지 공개.</span>
+      <span>빅토리아 앤드 앨버트 미술관(V&amp;A) 'Fashion' 온라인 컬렉션 — 17세기 이후 현존 의복의 규모를 직접 확인할 수 있다.</span>
+      <span>LACMA Collections — 애커먼 패션 플레이트 연작 다수 공개(퍼블릭 도메인).</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>도판 출처 및 라이선스</b><br>
+  홀바인 〈대사들〉, 벨라스케스 〈시녀들〉, 앵그르 〈무아테시에 부인〉, 레오나르도 〈드레이퍼리 습작〉: 퍼블릭 도메인(Wikimedia Commons). &nbsp;
+  애커먼 〈Walking Dress〉 패션 플레이트: 로스앤젤레스 카운티 미술관(LACMA), 퍼블릭 도메인. &nbsp;
+  마이브리지 〈Animal Locomotion〉: 메트로폴리탄 미술관 Open Access, CC0. &nbsp;
+  이명기 〈채제공 초상〉 시복본, 김홍도 〈씨름〉: 저작권 만료, 퍼블릭 도메인. &nbsp;
+  〈사모트라케의 니케〉 사진: Rijin, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> — 동일조건변경허락.</p>
+  <p>지문 출처 · 2026학년도 대학수학능력시험 영어 영역 41~42번(한국교육과정평가원, 2025. 11. 13. 시행). 해당 문항의 저작권은 한국교육과정평가원에 있으며, 이 페이지는 미술 교과 수업 자료로서 해설을 목적으로 인용했습니다. 문제지 원본은 <a href="https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperList.ebs" target="_blank" rel="noopener">EBSi 기출문제</a>에서 내려받을 수 있습니다. · 수업 자료 · 2026 · <a href="/">MUMUN CLASS</a></p>
+</footer>
+
+</body>
+</html>
